@@ -248,8 +248,8 @@
    "type": "la-split",
    "start": "w36",
    "transition": "fade",
-   "title": "Wo bewirbst du dich?",
-   "label": "U N D   D U ?",
+   "title": "Und du?",
+   "label": "W O   B E W I R B S T   D U ?",
    "ground": 1150,
    "items": [
     {

@@ -204,7 +204,7 @@
      "name": "cafe.morgenrot",
      "tiles": "fresh",
      "freshAt": "w55",
-     "step": 0.1,
+     "step": 0.05,
      "motifs": [
       "cup",
       "croissant",
