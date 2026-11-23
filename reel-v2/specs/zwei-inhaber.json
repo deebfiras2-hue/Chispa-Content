@@ -1,0 +1,454 @@
+{
+ "id": "zwei-inhaber",
+ "theme": "chispa",
+ "mode": "lineart",
+ "voice": {
+  "src": "zwei-inhaber/voice.mp3",
+  "words": "zwei-inhaber/words.json"
+ },
+ "music": {
+  "src": "music/uplifting-1.mp3",
+  "speechDb": -20,
+  "gapDb": -15,
+  "tailDb": -12
+ },
+ "narration": {
+  "pos": "bottom",
+  "y": 1490,
+  "size": 54
+ },
+ "cover": {
+  "frame": 520
+ },
+ "scenes": [
+  {
+   "type": "la-split",
+   "start": 0,
+   "bg": "warm",
+   "title": "Zwei Inhaber.",
+   "labels": [
+    {
+     "at": 0.2,
+     "text": "Z W E I   W E G E"
+    },
+    {
+     "at": "w2",
+     "text": "N R .  1   U N T E R S C H R E I B T"
+    }
+   ],
+   "ground": 1150,
+   "items": [
+    {
+     "kind": "person",
+     "x": 290,
+     "y": 1150,
+     "s": 2.5,
+     "at": 0.2,
+     "dd": 0.8,
+     "keys": [
+      {
+       "at": "w4",
+       "pose": "hold"
+      }
+     ]
+    },
+    {
+     "kind": "person",
+     "x": 790,
+     "y": 1150,
+     "s": 2.5,
+     "at": "w1",
+     "dd": 0.8,
+     "flip": true
+    },
+    {
+     "kind": "contract",
+     "x": 290,
+     "y": 640,
+     "s": 2.0,
+     "at": "w4",
+     "dd": 0.8
+    },
+    {
+     "type": "text",
+     "text": "MONATLICH",
+     "font": "mono",
+     "size": 30,
+     "spacing": 4,
+     "box": true,
+     "x": 290,
+     "y": 790,
+     "width": 360,
+     "at": "w6",
+     "anim": "fade",
+     "dd": 0.25,
+     "sfx": "sfx/snap.mp3"
+    }
+   ]
+  },
+  {
+   "type": "la-split",
+   "start": "w10",
+   "transition": "fade",
+   "bg": "grid",
+   "title": "Der erste.",
+   "label": "Ü B L I C H   I M   M A R K T",
+   "ground": false,
+   "items": [
+    {
+     "type": "text",
+     "text": "800–1.500 €",
+     "font": "title",
+     "size": 190,
+     "x": 540,
+     "y": 680,
+     "at": "w13",
+     "anim": "fade",
+     "dd": 0.3,
+     "sfx": "sfx/hit.mp3"
+    },
+    {
+     "type": "text",
+     "text": "IM MONAT",
+     "font": "mono",
+     "size": 36,
+     "spacing": 8,
+     "color": "muted",
+     "x": 540,
+     "y": 905,
+     "at": "w17",
+     "anim": "fade",
+     "dd": 0.3
+    },
+    {
+     "type": "text",
+     "text": "MINDESTLAUFZEIT",
+     "font": "mono",
+     "size": 30,
+     "spacing": 4,
+     "box": true,
+     "x": 540,
+     "y": 990,
+     "width": 440,
+     "at": "w21",
+     "anim": "fade",
+     "dd": 0.25
+    },
+    {
+     "type": "text",
+     "text": "3 MONATE",
+     "font": "mono",
+     "size": 30,
+     "spacing": 4,
+     "box": true,
+     "x": 220,
+     "y": 1110,
+     "width": 260,
+     "at": "w22",
+     "anim": "fade",
+     "dd": 0.25
+    },
+    {
+     "type": "text",
+     "text": "6 MONATE",
+     "font": "mono",
+     "size": 30,
+     "spacing": 4,
+     "box": true,
+     "x": 540,
+     "y": 1110,
+     "width": 260,
+     "at": "w23",
+     "anim": "fade",
+     "dd": 0.25
+    },
+    {
+     "type": "text",
+     "text": "12 MONATE",
+     "font": "mono",
+     "size": 30,
+     "spacing": 4,
+     "box": true,
+     "x": 860,
+     "y": 1110,
+     "width": 280,
+     "at": "w25",
+     "anim": "fade",
+     "dd": 0.25
+    },
+    {
+     "type": "text",
+     "text": "Quelle: Marktguides",
+     "font": "mono",
+     "size": 24,
+     "color": "muted",
+     "x": 540,
+     "y": 1220,
+     "at": "w13",
+     "anim": "fade",
+     "dd": 0.3
+    }
+   ]
+  },
+  {
+   "type": "la-split",
+   "start": "w27",
+   "transition": "fade",
+   "bg": "warm",
+   "title": "Der zweite.",
+   "label": "Z A H L T   E I N M A L",
+   "ground": false,
+   "items": [
+    {
+     "kind": "coin",
+     "x": 200,
+     "y": 880,
+     "s": 2.2,
+     "at": "w29",
+     "dd": 0.6
+    },
+    {
+     "type": "text",
+     "text": "EINMAL",
+     "font": "mono",
+     "size": 30,
+     "spacing": 4,
+     "box": true,
+     "x": 200,
+     "y": 1040,
+     "width": 220,
+     "at": "w30",
+     "anim": "fade",
+     "dd": 0.25
+    },
+    {
+     "type": "arrow",
+     "from": [
+      300,
+      880
+     ],
+     "to": [
+      420,
+      880
+     ],
+     "at": "w31",
+     "dd": 0.4
+    },
+    {
+     "kind": "phone",
+     "x": 540,
+     "y": 880,
+     "s": 3.0,
+     "at": "w31",
+     "dd": 0.6,
+     "params": {
+      "screen": "grid"
+     }
+    },
+    {
+     "type": "text",
+     "text": "PAKET",
+     "font": "mono",
+     "size": 30,
+     "spacing": 4,
+     "box": true,
+     "x": 540,
+     "y": 1040,
+     "width": 200,
+     "at": "w32",
+     "anim": "fade",
+     "dd": 0.25
+    },
+    {
+     "type": "arrow",
+     "from": [
+      660,
+      880
+     ],
+     "to": [
+      780,
+      880
+     ],
+     "at": "w33",
+     "dd": 0.4
+    },
+    {
+     "kind": "check",
+     "x": 880,
+     "y": 880,
+     "s": 2.2,
+     "at": "w34",
+     "dd": 0.5,
+     "accent": true
+    },
+    {
+     "type": "text",
+     "text": "FERTIG",
+     "font": "mono",
+     "size": 30,
+     "spacing": 4,
+     "box": true,
+     "x": 880,
+     "y": 1040,
+     "width": 220,
+     "at": "w34",
+     "anim": "fade",
+     "dd": 0.25
+    }
+   ]
+  },
+  {
+   "type": "kin-words",
+   "start": "w35",
+   "transition": "fade",
+   "bg": "petrol",
+   "meta": "CHISPA STUDIO",
+   "beats": [
+    {
+     "fromWord": 35,
+     "anim": "snap",
+     "stroke": "under",
+     "lines": [
+      {
+       "text": "Einmal zahlen.",
+       "size": 260
+      },
+      {
+       "text": "Kein Abo.",
+       "size": 320,
+       "accent": [
+        "Abo"
+       ],
+       "fromWord": 37
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "la-split",
+   "start": "w39",
+   "transition": "fade",
+   "bg": "warm",
+   "title": "Zum Start: Prueba.",
+   "labels": [
+    {
+     "at": 0,
+     "text": "Z U M   A U S P R O B I E R E N"
+    },
+    {
+     "at": "w52",
+     "text": "A B   1 4 9   €   ·   E I N M A L"
+    }
+   ],
+   "ground": false,
+   "items": [
+    {
+     "type": "text",
+     "text": "5 POSTS",
+     "font": "mono",
+     "size": 40,
+     "spacing": 4,
+     "box": true,
+     "x": 540,
+     "y": 640,
+     "width": 360,
+     "at": "w45",
+     "anim": "fade",
+     "dd": 0.25
+    },
+    {
+     "type": "text",
+     "text": "5 STORIES",
+     "font": "mono",
+     "size": 40,
+     "spacing": 4,
+     "box": true,
+     "x": 540,
+     "y": 740,
+     "width": 360,
+     "at": "w47",
+     "anim": "fade",
+     "dd": 0.25
+    },
+    {
+     "type": "text",
+     "text": "1 REEL",
+     "font": "mono",
+     "size": 40,
+     "spacing": 4,
+     "box": true,
+     "x": 540,
+     "y": 840,
+     "width": 360,
+     "at": "w49",
+     "anim": "fade",
+     "dd": 0.25
+    },
+    {
+     "type": "text",
+     "text": "149 €",
+     "font": "title",
+     "size": 280,
+     "color": "accent",
+     "x": 540,
+     "y": 1060,
+     "at": "w52",
+     "anim": "fade",
+     "dd": 0.3,
+     "sfx": "sfx/hit.mp3"
+    },
+    {
+     "type": "text",
+     "text": "EINMAL PRO KUNDE",
+     "font": "mono",
+     "size": 32,
+     "spacing": 6,
+     "color": "muted",
+     "x": 540,
+     "y": 1230,
+     "at": "w54",
+     "anim": "fade",
+     "dd": 0.3
+    }
+   ]
+  },
+  {
+   "type": "kin-words",
+   "start": "w57",
+   "transition": "fade",
+   "bg": "nebel",
+   "meta": "CHISPA STUDIO",
+   "beats": [
+    {
+     "fromWord": 57,
+     "anim": "mask",
+     "stroke": "under",
+     "lines": [
+      {
+       "text": "Schreib uns",
+       "size": 260
+      },
+      {
+       "text": "auf WhatsApp.",
+       "size": 260,
+       "accent": [
+        "WhatsApp"
+       ],
+       "fromWord": 59
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "la-end",
+   "start": "w61",
+   "transition": "fade",
+   "signoff": "Content, der den Daumen stoppt.",
+   "fromWord": 61,
+   "outro": "Chispa!",
+   "outroWord": 66
+  }
+ ]
+}
