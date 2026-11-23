@@ -1,4 +1,4 @@
-NEIN
+JA
 
 # 2026-11-27 · Reel 19:00 · Café vorher und nachher (Beispiel)
 # Video: reels/2026-11-27-vorher-nachher-cafe/reel.mp4 · Caption: reels/2026-11-27-vorher-nachher-cafe/caption.txt
