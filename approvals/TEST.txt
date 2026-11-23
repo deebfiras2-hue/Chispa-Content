@@ -1,0 +1,3 @@
+NEIN
+
+# TEST: ersetze NEIN durch JA und tippe auf 'Commit changes'.
