@@ -1,0 +1,327 @@
+{
+ "id": "drei-posts-heute",
+ "theme": "chispa",
+ "mode": "kinetic",
+ "voice": {
+  "src": "drei-posts-heute/voice.mp3",
+  "words": "drei-posts-heute/words.json"
+ },
+ "music": {
+  "src": "music/uplifting-1.mp3",
+  "speechDb": -20,
+  "gapDb": -15,
+  "tailDb": -12
+ },
+ "narration": {
+  "pos": "bottom",
+  "y": 1490,
+  "size": 54
+ },
+ "cover": {
+  "frame": 55
+ },
+ "scenes": [
+  {
+   "type": "kin-words",
+   "start": 0,
+   "bg": "nebel",
+   "meta": "IMBISS · LADEN",
+   "beats": [
+    {
+     "fromWord": 0,
+     "anim": "snap",
+     "stroke": "bar",
+     "lines": [
+      {
+       "text": "3 Posts,",
+       "size": 330,
+       "accent": [
+        "3"
+       ]
+      },
+      {
+       "text": "die du heute",
+       "size": 230,
+       "fromWord": 2
+      },
+      {
+       "text": "machen kannst.",
+       "size": 230,
+       "fromWord": 5
+      }
+     ]
+    },
+    {
+     "fromWord": 7,
+     "anim": "mask",
+     "stroke": "strike",
+     "lines": [
+      {
+       "text": "Ohne",
+       "size": 260
+      },
+      {
+       "text": "Fotograf.",
+       "size": 300,
+       "fromWord": 8,
+       "accent": [
+        "Fotograf"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "kin-words",
+   "start": "w9",
+   "transition": "fade",
+   "bg": "petrol",
+   "meta": "POST 01",
+   "beats": [
+    {
+     "fromWord": 9,
+     "anim": "snap",
+     "stroke": "under",
+     "lines": [
+      {
+       "text": "1.",
+       "size": 420
+      },
+      {
+       "text": "Heute frisch.",
+       "size": 270,
+       "fromWord": 10,
+       "accent": [
+        "frisch"
+       ]
+      }
+     ]
+    },
+    {
+     "fromWord": 12,
+     "anim": "slide",
+     "stroke": "bar",
+     "lines": [
+      {
+       "text": "Dein",
+       "size": 230
+      },
+      {
+       "text": "Tagesangebot.",
+       "size": 250,
+       "fromWord": 13,
+       "accent": [
+        "Tagesangebot"
+       ]
+      }
+     ]
+    },
+    {
+     "fromWord": 14,
+     "anim": "stack",
+     "stroke": "circle",
+     "lines": [
+      {
+       "text": "Ein Foto.",
+       "size": 230,
+       "fromWord": 14
+      },
+      {
+       "text": "Ein Satz.",
+       "size": 230,
+       "fromWord": 16
+      },
+      {
+       "text": "Ein Preis.",
+       "size": 230,
+       "fromWord": 18,
+       "accent": [
+        "Preis"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "kin-words",
+   "start": "w20",
+   "transition": "fade",
+   "bg": "nebel",
+   "meta": "POST 02",
+   "beats": [
+    {
+     "fromWord": 20,
+     "anim": "snap",
+     "stroke": "under",
+     "lines": [
+      {
+       "text": "2.",
+       "size": 420
+      },
+      {
+       "text": "Hinter der Theke.",
+       "size": 250,
+       "fromWord": 21,
+       "accent": [
+        "Theke"
+       ]
+      }
+     ]
+    },
+    {
+     "fromWord": 24,
+     "anim": "mask",
+     "stroke": "bar",
+     "lines": [
+      {
+       "text": "Die Hand,",
+       "size": 250
+      },
+      {
+       "text": "die schneidet",
+       "size": 230,
+       "fromWord": 26
+      },
+      {
+       "text": "oder backt.",
+       "size": 230,
+       "fromWord": 28,
+       "accent": [
+        "backt"
+       ]
+      }
+     ]
+    },
+    {
+     "fromWord": 30,
+     "anim": "snap",
+     "stroke": "strike",
+     "lines": [
+      {
+       "text": "Kein Gesicht",
+       "size": 250,
+       "accent": [
+        "Gesicht"
+       ]
+      },
+      {
+       "text": "nötig.",
+       "size": 250,
+       "fromWord": 32
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "kin-words",
+   "start": "w33",
+   "transition": "fade",
+   "bg": "tinte",
+   "meta": "POST 03",
+   "beats": [
+    {
+     "fromWord": 33,
+     "anim": "snap",
+     "stroke": "under",
+     "lines": [
+      {
+       "text": "3.",
+       "size": 420
+      },
+      {
+       "text": "Eine Frage",
+       "size": 250,
+       "fromWord": 34,
+       "accent": [
+        "Frage"
+       ]
+      },
+      {
+       "text": "an deine Kunden.",
+       "size": 220,
+       "fromWord": 36
+      }
+     ]
+    },
+    {
+     "fromWord": 39,
+     "anim": "slide",
+     "stroke": "circle",
+     "lines": [
+      {
+       "text": "Scharf",
+       "size": 300
+      },
+      {
+       "text": "oder mild?",
+       "size": 300,
+       "fromWord": 40,
+       "accent": [
+        "mild"
+       ]
+      }
+     ]
+    },
+    {
+     "fromWord": 42,
+     "anim": "mask",
+     "stroke": "bar",
+     "lines": [
+      {
+       "text": "Da hat jeder",
+       "size": 240
+      },
+      {
+       "text": "eine Meinung.",
+       "size": 250,
+       "fromWord": 45,
+       "accent": [
+        "Meinung"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "kin-words",
+   "start": "w47",
+   "transition": "fade",
+   "bg": "nebel",
+   "meta": "SPEICHERN",
+   "beats": [
+    {
+     "fromWord": 47,
+     "anim": "snap",
+     "stroke": "under",
+     "lines": [
+      {
+       "text": "Speicher dir",
+       "size": 280
+      },
+      {
+       "text": "das.",
+       "size": 360,
+       "fromWord": 49,
+       "accent": [
+        "das"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "la-end",
+   "start": "w50",
+   "transition": "fade",
+   "signoff": "Content, der den Daumen stoppt.",
+   "fromWord": 50,
+   "outro": "Chispa!",
+   "outroWord": 55
+  }
+ ]
+}
