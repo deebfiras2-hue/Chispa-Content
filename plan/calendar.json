@@ -5,6 +5,22 @@
       "date": "2026-11-24",
       "items": [
         {
+          "id": "2026-11-24-carousel",
+          "type": "carousel",
+          "time": "12:00",
+          "title": "Unsere Pakete (anpinnen)",
+          "images": [
+            "posts/2026-11-24-pakete/1.jpg",
+            "posts/2026-11-24-pakete/2.jpg",
+            "posts/2026-11-24-pakete/3.jpg",
+            "posts/2026-11-24-pakete/4.jpg",
+            "posts/2026-11-24-pakete/5.jpg",
+            "posts/2026-11-24-pakete/6.jpg",
+            "posts/2026-11-24-pakete/7.jpg"
+          ],
+          "caption_file": "posts/2026-11-24-pakete/caption.txt"
+        },
+        {
           "id": "2026-11-24-reel",
           "type": "reel",
           "time": "19:00",
@@ -19,19 +35,35 @@
       "date": "2026-11-25",
       "items": [
         {
-          "id": "2026-11-25-reel",
+          "id": "2026-11-25-reel-b",
           "type": "reel",
           "time": "19:00",
-          "title": "Dein Schaufenster ist heute sechs Zoll groß",
-          "video": "reels/2026-11-25-3d-schaufenster/reel.mp4",
-          "cover": "reels/2026-11-25-3d-schaufenster/cover.jpg",
-          "caption_file": "reels/2026-11-25-3d-schaufenster/caption.txt"
+          "title": "Zwei Blumenläden: Story statt perfekter Post",
+          "video": "reels/2026-11-25-story-statt-perfekt/reel.mp4",
+          "cover": "reels/2026-11-25-story-statt-perfekt/cover.jpg",
+          "caption_file": "reels/2026-11-25-story-statt-perfekt/caption.txt"
         }
       ]
     },
     {
       "date": "2026-11-26",
       "items": [
+        {
+          "id": "2026-11-26-carousel",
+          "type": "carousel",
+          "time": "12:00",
+          "title": "5 Post-Ideen für dein Kosmetikstudio",
+          "images": [
+            "posts/2026-11-26-ideen-kosmetik/1.jpg",
+            "posts/2026-11-26-ideen-kosmetik/2.jpg",
+            "posts/2026-11-26-ideen-kosmetik/3.jpg",
+            "posts/2026-11-26-ideen-kosmetik/4.jpg",
+            "posts/2026-11-26-ideen-kosmetik/5.jpg",
+            "posts/2026-11-26-ideen-kosmetik/6.jpg",
+            "posts/2026-11-26-ideen-kosmetik/7.jpg"
+          ],
+          "caption_file": "posts/2026-11-26-ideen-kosmetik/caption.txt"
+        },
         {
           "id": "2026-11-26-reel",
           "type": "reel",
@@ -54,6 +86,63 @@
           "video": "reels/2026-11-27-vorher-nachher-cafe/reel.mp4",
           "cover": "reels/2026-11-27-vorher-nachher-cafe/cover.jpg",
           "caption_file": "reels/2026-11-27-vorher-nachher-cafe/caption.txt"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-28",
+      "items": [
+        {
+          "id": "2026-11-28-reel",
+          "type": "reel",
+          "time": "19:00",
+          "title": "3 Posts, die du heute machen kannst",
+          "video": "reels/2026-11-28-drei-posts-heute/reel.mp4",
+          "cover": "reels/2026-11-28-drei-posts-heute/cover.jpg",
+          "caption_file": "reels/2026-11-28-drei-posts-heute/caption.txt"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-29",
+      "items": [
+        {
+          "id": "2026-11-29-carousel",
+          "type": "carousel",
+          "time": "12:00",
+          "title": "Agentur-Abo oder einmal zahlen?",
+          "images": [
+            "posts/2026-11-29-abo-oder-einmal/1.jpg",
+            "posts/2026-11-29-abo-oder-einmal/2.jpg",
+            "posts/2026-11-29-abo-oder-einmal/3.jpg",
+            "posts/2026-11-29-abo-oder-einmal/4.jpg",
+            "posts/2026-11-29-abo-oder-einmal/5.jpg",
+            "posts/2026-11-29-abo-oder-einmal/6.jpg"
+          ],
+          "caption_file": "posts/2026-11-29-abo-oder-einmal/caption.txt"
+        },
+        {
+          "id": "2026-11-29-reel",
+          "type": "reel",
+          "time": "19:00",
+          "title": "Zwei Inhaber",
+          "video": "reels/2026-11-29-zwei-inhaber/reel.mp4",
+          "cover": "reels/2026-11-29-zwei-inhaber/cover.jpg",
+          "caption_file": "reels/2026-11-29-zwei-inhaber/caption.txt"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-30",
+      "items": [
+        {
+          "id": "2026-11-30-reel",
+          "type": "reel",
+          "time": "19:00",
+          "title": "Ein Angebot statt zehn",
+          "video": "reels/2026-11-30-ein-angebot/reel.mp4",
+          "cover": "reels/2026-11-30-ein-angebot/cover.jpg",
+          "caption_file": "reels/2026-11-30-ein-angebot/caption.txt"
         }
       ]
     }
