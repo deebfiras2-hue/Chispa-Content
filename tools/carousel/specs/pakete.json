@@ -1,0 +1,33 @@
+{
+ "size": "1080x1350",
+ "slides": [
+  {
+   "bg": "petrol",
+   "html": "<h1 style=\"font-size:230px;margin-top:150px\">Unsere<br>Pakete.</h1>\n<h2 style=\"margin-top:60px;font-size:150px\">Einmal zahlen.<br><span class=\"f\">Kein Abo.</span></h2>\n<div class=\"bottom\"><p style=\"font-size:38px\">Vier Pakete, ab 149 €. Wisch durch.</p></div>"
+  },
+  {
+   "bg": "nebel",
+   "html": "<img class=\"spark\" src=\"SPARK\" style=\"right:96px;top:120px;width:130px\">\n<h1>Prueba</h1><p style=\"margin-top:22px;font-size:40px\"><b>Zum Ausprobieren.</b><br><span class=\"muted\">Einmal pro Kunde.</span></p>\n<ul class=\"l\" style=\"margin-top:70px;width:600px\"><li><b>5</b> Posts</li><li><b>5</b> Stories</li><li><b>1</b> Reel</li></ul>\n<div class=\"bottom\"><div class=\"price\">149 €</div><p style=\"font-size:36px;margin-top:6px\"><b>einmal.</b> Jeder Post mit fertiger Caption,<br>jedes Reel mit Sprecherstimme.</p></div>"
+  },
+  {
+   "bg": "nebel",
+   "html": "<img class=\"spark\" src=\"SPARK\" style=\"right:96px;top:120px;width:130px\">\n<h1>Chispita</h1><p style=\"margin-top:22px;font-size:40px\"><b>Ein kleiner Funke.</b></p>\n<ul class=\"l\" style=\"margin-top:70px;width:600px\"><li><b>10</b> Posts</li><li><b>10</b> Stories</li><li><b>1</b> Reel</li></ul>\n<div class=\"bottom\"><div class=\"price\">349 €</div><p style=\"font-size:36px;margin-top:6px\"><b>einmal.</b> Jeder Post mit fertiger Caption,<br>jedes Reel mit Sprecherstimme.</p></div>"
+  },
+  {
+   "bg": "petrol",
+   "html": "<img class=\"spark\" src=\"SPARK\" style=\"right:96px;top:120px;width:130px\">\n<div style=\"margin-bottom:26px\"><span class=\"pill\">Unsere Empfehlung</span></div><h1>Chispa</h1><p style=\"margin-top:22px;font-size:40px\"><b>Ein Funke.</b></p>\n<ul class=\"l\" style=\"margin-top:70px;width:600px\"><li><b>20</b> Posts</li><li><b>20</b> Stories</li><li><b>3</b> Reels</li></ul>\n<div class=\"bottom\"><div class=\"price\">699 €</div><p style=\"font-size:36px;margin-top:6px\"><b>einmal.</b> Jeder Post mit fertiger Caption,<br>jedes Reel mit Sprecherstimme.</p></div>"
+  },
+  {
+   "bg": "tinte",
+   "html": "<img class=\"spark\" src=\"SPARK\" style=\"right:96px;top:120px;width:130px\">\n<h1>Chispazo</h1><p style=\"margin-top:22px;font-size:40px\"><b>Ein Funkenregen. Content für lange Zeit.</b></p>\n<ul class=\"l\" style=\"margin-top:70px;width:600px\"><li><b>50</b> Posts</li><li><b>50</b> Stories</li><li><b>5</b> Reels</li></ul>\n<div class=\"bottom\"><div class=\"price\">1.399 €</div><p style=\"font-size:36px;margin-top:6px\"><b>einmal.</b> Jeder Post mit fertiger Caption,<br>jedes Reel mit Sprecherstimme.</p></div>"
+  },
+  {
+   "bg": "nebel",
+   "html": "<h2 style=\"font-size:170px\">So <em>geht’s.</em></h2>\n<ul class=\"l\" style=\"margin-top:80px\"><li><b class=\"f\">1.</b> Paket wählen.</li><li><b>2.</b> Ein paar Fragen beantworten.</li><li><b>3.</b> Alles fertig bekommen.</li></ul>\n<p style=\"margin-top:70px;font-size:46px\"><b>Alles über WhatsApp.</b><br><span class=\"muted\">Fertig in wenigen Werktagen.</span></p>"
+  },
+  {
+   "bg": "petrol",
+   "html": "<h1 style=\"font-size:200px;margin-top:120px\">Schreib uns auf <span class=\"f\">WhatsApp.</span></h1>\n<p style=\"margin-top:60px;font-size:44px\">Link in der Bio.<br><b>Ab 149 €. Einmal zahlen. Kein Abo.</b></p>\n<div class=\"bottom\"><p style=\"font-size:34px\" class=\"muted\">Speicher dir das.</p></div>"
+  }
+ ]
+}
