@@ -8,3 +8,4 @@
 - Visuals: stylised 3D drawn in code, no AI images.
 - Music: generated library `assets/music/uplifting-1.mp3`, ducked about 20 dB under the voice.
 - Files: `reel.mp4`, `cover.jpg`, `sheet.jpg`, `caption.txt`. Not published.
+- Render: 34.5 s reel, 468 s total on 4 vCPU (2026-11-23). QA: stills sheets iterated 3×, final contact sheet checked (umlauts, safe areas, one Funke accent per frame).

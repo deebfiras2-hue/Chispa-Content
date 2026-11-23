@@ -8,3 +8,4 @@
 - Music: generated library `assets/music/curious-2.mp3`, ducked about 20 dB under the voice.
 - Files: `reel.mp4` (1080×1920, 30 fps, −14 LUFS), `cover.jpg`, `sheet.jpg` (contact sheet), `caption.txt`.
 - Not published (waits for the owner's „JA“ in `approvals/2026-11-25.txt`).
+- Render: 34.4 s reel, 435 s total on 4 vCPU (2026-11-23). QA: stills sheets iterated 3×, final contact sheet checked (umlauts, safe areas, one Funke accent per frame).

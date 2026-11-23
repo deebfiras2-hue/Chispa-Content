@@ -8,3 +8,4 @@
 - Visuals: line-art drawn in code, no AI images, no real businesses.
 - Music: generated library `assets/music/curious-1.mp3`, ducked about 20 dB under the voice.
 - Files: `reel.mp4`, `cover.jpg`, `sheet.jpg`, `caption.txt`. Not published.
+- Render: 35.4 s reel, 183 s total on 4 vCPU (2026-11-23). QA: stills sheets iterated 3×, final contact sheet checked (umlauts, safe areas, one Funke accent per frame).
