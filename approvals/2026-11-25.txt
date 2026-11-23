@@ -1,5 +1,3 @@
-JA
+NEIN
 
-# 2026-11-25 · Reel 19:00 · Dein Schaufenster ist heute sechs Zoll groß
-# Video: reels/2026-11-25-3d-schaufenster/reel.mp4 · Caption: reels/2026-11-25-3d-schaufenster/caption.txt
-# Zum Freigeben die erste Zeile auf JA ändern. Änderungswünsche unten drunter schreiben.
+# Inhalt geaendert: neues Reel fuer Mittwoch. Bitte die neue Vorschau ansehen und dann JA.
