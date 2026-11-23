@@ -1,0 +1,259 @@
+{
+ "id": "ein-angebot",
+ "theme": "chispa",
+ "mode": "3d",
+ "voice": {
+  "src": "ein-angebot/voice.mp3",
+  "words": "ein-angebot/words.json"
+ },
+ "music": {
+  "src": "music/curious-2.mp3",
+  "speechDb": -20,
+  "gapDb": -15,
+  "tailDb": -12
+ },
+ "narration": {
+  "pos": "bottom",
+  "y": 1490,
+  "size": 54
+ },
+ "cover": {
+  "frame": 300
+ },
+ "scenes": [
+  {
+   "type": "3d-tags",
+   "start": 0,
+   "title": "Ein Angebot statt zehn.",
+   "titleY": 300,
+   "titleSize": 120,
+   "labels": [
+    {
+     "at": 0,
+     "text": "K O S M E T I K S T U D I O"
+    },
+    {
+     "at": "w5",
+     "text": "P O S T   1 :   P R E I S L I S T E"
+    },
+    {
+     "at": "w16",
+     "text": "P O S T   2 :   E I N   A N G E B O T"
+    }
+   ],
+   "tags": [
+    {
+     "kind": "receipt",
+     "at": "w7",
+     "x": -1.15,
+     "text": "",
+     "lines": [
+      "Maniküre      29",
+      "Pediküre      35",
+      "Wimpern       45",
+      "Brauen        19",
+      "Färben        15",
+      "Peeling       39",
+      "Gesicht       49",
+      "Make-up       55",
+      "Waxing        25",
+      "Lifting       59"
+     ],
+     "total": ""
+    },
+    {
+     "kind": "tag",
+     "at": "w19",
+     "x": 1.0,
+     "text": "35 €",
+     "sub": "BRAUEN + FÄRBEN",
+     "accent": true
+    }
+   ],
+   "cam": [
+    {
+     "at": 0,
+     "dur": 0,
+     "dist": 17,
+     "az": -10,
+     "el": 14,
+     "ty": -1.35
+    },
+    {
+     "at": 0,
+     "dur": 8,
+     "dist": 15,
+     "az": 4,
+     "el": 10,
+     "ty": -1.3
+    }
+   ],
+   "items": []
+  },
+  {
+   "type": "3d-phone",
+   "start": "w28",
+   "transition": "fade",
+   "title": "Scrollen oder tippen?",
+   "titleY": 300,
+   "labels": [
+    {
+     "at": 0,
+     "text": "K U N D I N   1 :   S C R O L L T"
+    },
+    {
+     "at": "w33",
+     "text": "K U N D I N   2 :   T I P P T"
+    }
+   ],
+   "screens": [
+    {
+     "at": 0,
+     "kind": "post",
+     "name": "studio.beispiel",
+     "motif": "text:Preisliste|10 Preise",
+     "caption": "Alle Preise im Überblick …"
+    },
+    {
+     "at": "w33",
+     "kind": "post",
+     "name": "studio.beispiel",
+     "motif": "text:Brauen|35 €",
+     "caption": "Augenbrauen in Form, mit Färben."
+    }
+   ],
+   "phone": [
+    {
+     "at": 0,
+     "dur": 0,
+     "ry": 0.9
+    },
+    {
+     "at": 0,
+     "dur": 1.2,
+     "ry": -0.15,
+     "ease": "out"
+    },
+    {
+     "at": "w33-0.2",
+     "dur": 0.6,
+     "ry": 0.12
+    }
+   ],
+   "cam": [
+    {
+     "at": 0,
+     "dur": 0,
+     "dist": 16
+    },
+    {
+     "at": "w33",
+     "dur": 1.2,
+     "dist": 11,
+     "ty": 0.4
+    }
+   ],
+   "items": [],
+   "titleSize": 110
+  },
+  {
+   "type": "3d-text",
+   "start": "w36",
+   "transition": "fade",
+   "lines": [
+    {
+     "text": "Zu viel Auswahl",
+     "fromWord": 36,
+     "size": 0.62,
+     "y": 0.6
+    },
+    {
+     "text": "ist keine Auswahl.",
+     "fromWord": 39,
+     "size": 0.62,
+     "y": -0.4,
+     "accent": true
+    }
+   ],
+   "cam": [
+    {
+     "at": 0,
+     "dur": 0,
+     "dist": 12
+    },
+    {
+     "at": 0,
+     "dur": 3,
+     "dist": 10.5
+    }
+   ],
+   "narration": false
+  },
+  {
+   "type": "kin-words",
+   "start": "w42",
+   "transition": "fade",
+   "bg": "petrol",
+   "meta": "WEITERSAGEN",
+   "beats": [
+    {
+     "fromWord": 42,
+     "anim": "snap",
+     "stroke": "strike",
+     "lines": [
+      {
+       "text": "Ein Angebot",
+       "size": 280
+      },
+      {
+       "text": "statt zehn.",
+       "size": 280,
+       "accent": [
+        "zehn"
+       ],
+       "fromWord": 44
+      }
+     ]
+    },
+    {
+     "fromWord": 46,
+     "anim": "mask",
+     "stroke": "bar",
+     "lines": [
+      {
+       "text": "Schick das",
+       "size": 230
+      },
+      {
+       "text": "einer Kosmetikerin,",
+       "size": 230,
+       "fromWord": 48
+      },
+      {
+       "text": "die alles auf",
+       "size": 230,
+       "fromWord": 50
+      },
+      {
+       "text": "einmal postet.",
+       "size": 230,
+       "accent": [
+        "einmal"
+       ],
+       "fromWord": 53
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "la-end",
+   "start": "w55",
+   "transition": "fade",
+   "signoff": "Content, der den Daumen stoppt.",
+   "fromWord": 55,
+   "outro": "Chispa!",
+   "outroWord": 60
+  }
+ ]
+}
