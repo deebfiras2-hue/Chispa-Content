@@ -23,7 +23,14 @@ NEW PRICES since 2026-11-22: Prueba 149 € (5 Posts, 5 Stories, 1 Reel; „zum 
 9. Only claims from rules/claims.md; market facts only as written there (with source).
 
 ## Voice
-German voice: ElevenLabs „Anna – Excited & Journalistic“ voice_id DEZHhPbmb8LVZmWufkCh (female, native German), model eleven_v3, language_code de. Male: Liam TX3LPaxmHKxFdv7VOQHJ. Value reels: calm, competent read. Offer reels: lively.
+German voice: ElevenLabs „Anna – Excited & Journalistic“ voice_id DEZHhPbmb8LVZmWufkCh (female, native German), model eleven_v3, language_code de, endpoint `/with-timestamps`. Male (Handwerk/Werkstatt): Liam TX3LPaxmHKxFdv7VOQHJ.
+
+**Style since 2026-11-23 (owner: „a little more excited“), for ALL reels:**
+- stability **0.0 („Creative“)** for hook-heavy and offer reels, **0.3** for calmer value reels; similarity_boost 0.8.
+- eleven_v3 audio tags, sparingly and only in the TTS text (never in captions or on screen): `[excited]` before the hook, `[enthusiastic]` before the key tip or the offer, `[warmly]` before the sign-off. Short punchy sentences, an exclamation mark where it is natural.
+- Speed the voice up **1.15×** (`ffmpeg atempo=1.15`) and divide every word timing by 1.15 before rendering; master to about −14 LUFS (render pipeline).
+- Energetic, smiling and clear, never shouty; still credible for business owners. Target ~160–185 words per minute after the speed-up.
+- Helper: `python3 reel-v2/scripts/voice.py <id> <voice_id> "<text with tags>" --stability 0.0` (tempo 1.15 is the default; tags are dropped from words.json).
 
 ## Already published
 All 20 launch posts are online (see examples/contact-sheet-posts.jpg) and reels 01-21 exist (rules/existing-reels-series-01.md). Do not repeat their topics one-to-one.

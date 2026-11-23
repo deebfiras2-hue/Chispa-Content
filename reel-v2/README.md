@@ -369,8 +369,16 @@ Typed narration is hidden during `kin-*` scenes (the words are the picture).
 Talking objects (a shop, a phone, a till) with mouth shapes driven by the word timings, like reel 17. Not built yet;
 planned for week 2 as a `3d-character` scene on top of the 3D stage.
 
-## Voice helper
+## Voice helper and Chispa voice style (since 2026-11-23)
 
-`python3 scripts/voice.py <id> <voice_id> "<text>" [--tempo 1.0]` calls ElevenLabs `/with-timestamps` (eleven_v3,
-`language_code: de`, stability 0.5, similarity 0.8; key from `$ELEVENLABS_API_KEY`) and writes `public/<id>/voice.mp3`,
-`words.json` and `alignment_raw.json`.
+`python3 scripts/voice.py <id> <voice_id> "<text>" [--stability 0.0] [--tempo 1.15]` calls ElevenLabs `/with-timestamps`
+(eleven_v3, `language_code: de`, similarity 0.8; key from `$ELEVENLABS_API_KEY`, never printed) and writes
+`public/<id>/voice.mp3`, `words.json` and `alignment_raw.json`.
+
+Chispa style for every reel (also in `../rules/CHISPA-RULES.md`, Voice):
+- Anna `DEZHhPbmb8LVZmWufkCh` (Liam `TX3LPaxmHKxFdv7VOQHJ` for Handwerk/Werkstatt).
+- `--stability 0.0` („Creative“) for hook-heavy and offer reels, `0.3` for calmer value reels.
+- Audio tags in the TTS text only: `[excited]` before the hook, `[enthusiastic]` before the key tip/offer, `[warmly]`
+  before the sign-off. The script removes `[...]` tokens from `words.json`, so word indices (`"w12"`) match the plain script.
+- Tempo 1.15× by default (atempo + every timing divided by 1.15); the render masters to −14 LUFS.
+- Energetic, smiling, clear, never shouty. Aim for ~160–185 wpm after the speed-up.
