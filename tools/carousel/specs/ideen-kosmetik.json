@@ -1,0 +1,33 @@
+{
+ "size": "1080x1350",
+ "slides": [
+  {
+   "bg": "petrol",
+   "html": "<h1 style=\"font-size:210px;margin-top:150px\">5 Post-Ideen<br>für dein<br><em>Kosmetik&shy;studio.</em></h1>\n<div class=\"bottom\"><p style=\"font-size:40px\"><span class=\"f\" style=\"font-weight:700\">Speicher dir das.</span> Wisch durch.</p></div>"
+  },
+  {
+   "bg": "nebel",
+   "html": "<div class=\"k f\" style=\"font-size:330px;line-height:.9;margin-top:40px\">1.</div>\n<h2 style=\"margin-top:40px;font-size:160px\">Vorher und nachher.</h2>\n<p style=\"margin-top:50px;font-size:50px;max-width:900px\">Brauen, Wimpern, Nägel. Gleiches Licht, gleicher Winkel. Und vorher fragen, ob du das Foto zeigen darfst.</p>"
+  },
+  {
+   "bg": "nebel",
+   "html": "<div class=\"k f\" style=\"font-size:330px;line-height:.9;margin-top:40px\">2.</div>\n<h2 style=\"margin-top:40px;font-size:160px\">Ein Angebot der Woche.</h2>\n<p style=\"margin-top:50px;font-size:50px;max-width:900px\">Nicht die ganze Preisliste. Eine Sache, ein Preis, ein Satz, warum gerade jetzt.</p>"
+  },
+  {
+   "bg": "nebel",
+   "html": "<div class=\"k f\" style=\"font-size:330px;line-height:.9;margin-top:40px\">3.</div>\n<h2 style=\"margin-top:40px;font-size:160px\">Ganz nah dran.</h2>\n<p style=\"margin-top:50px;font-size:50px;max-width:900px\">Die neue Nagelfarbe, die Pinsel, das frische Handtuch. Details zeigen, wie sorgfältig du arbeitest.</p>"
+  },
+  {
+   "bg": "nebel",
+   "html": "<div class=\"k f\" style=\"font-size:330px;line-height:.9;margin-top:40px\">4.</div>\n<h2 style=\"margin-top:40px;font-size:160px\">Ein Tipp für zu Hause.</h2>\n<p style=\"margin-top:50px;font-size:50px;max-width:900px\">Was soll deine Kundin nach dem Termin beachten? Ein Tipp pro Post, in deinen eigenen Worten.</p>"
+  },
+  {
+   "bg": "nebel",
+   "html": "<div class=\"k f\" style=\"font-size:330px;line-height:.9;margin-top:40px\">5.</div>\n<h2 style=\"margin-top:40px;font-size:160px\">Freie Termine.</h2>\n<p style=\"margin-top:50px;font-size:50px;max-width:900px\">Eine Story mit deinen Lücken: „Do 15 Uhr, Sa 10 Uhr frei.“ Ehrlich, kurz, mit Link zum Buchen.</p>"
+  },
+  {
+   "bg": "tinte",
+   "html": "<h1 style=\"font-size:200px;margin-top:180px\">Speicher<br>dir <span class=\"f\">das.</span></h1>\n<p style=\"margin-top:60px;font-size:42px\">Fünf Ideen, fünf Posts.<br>Fang heute mit einer an.</p>\n<div class=\"bottom\"><p style=\"font-size:34px\" class=\"muted\">Content, der den Daumen stoppt.</p></div>"
+  }
+ ]
+}

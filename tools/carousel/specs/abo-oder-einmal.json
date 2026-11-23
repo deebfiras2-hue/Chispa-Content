@@ -1,0 +1,30 @@
+{
+ "size": "1080x1350",
+ "css": ".rc{background:#F7F9F6;color:var(--tinte);font-family:'JBM',monospace;border-radius:6px;padding:46px 50px;box-shadow:0 20px 60px rgba(0,0,0,.3);font-size:32px;line-height:1.5}\n.rc .row{display:flex;justify-content:space-between;border-bottom:2px dashed #b9c7c0;padding:10px 0}\n.rc .tot{font-family:Karantina;font-weight:700;font-size:96px;line-height:1;margin-top:24px}\n.rc .src{font-size:22px;opacity:.6;margin-top:16px}\ntable{width:100%;border-collapse:collapse;font-size:34px} td,th{padding:22px 10px;border-bottom:2px solid rgba(238,244,239,.2);text-align:left;vertical-align:top}\nth{font-family:Karantina;font-size:70px;font-weight:700}",
+ "slides": [
+  {
+   "bg": "nebel",
+   "html": "<h1 style=\"font-size:220px;margin-top:150px\">Agentur-Abo<br>oder <span class=\"f\">einmal</span><br>zahlen?</h1>\n<div class=\"bottom\"><p style=\"font-size:40px\">Eine ehrliche Rechnung. Wisch durch.</p></div>"
+  },
+  {
+   "bg": "petrol",
+   "html": "<h2 style=\"font-size:120px\">So rechnen viele <em>Abos.</em></h2>\n<div class=\"rc\" style=\"margin-top:56px\">\n<div style=\"font-weight:700;letter-spacing:4px\">SOCIAL MEDIA · MONATLICH</div>\n<div class=\"row\"><span>Monat 1</span><span>800–1.500 €</span></div>\n<div class=\"row\"><span>Monat 2</span><span>800–1.500 €</span></div>\n<div class=\"row\"><span>Monat 3</span><span>800–1.500 €</span></div>\n<div class=\"row\"><span>Mindestlaufzeit</span><span>3, 6 oder 12 Mon.</span></div>\n<div class=\"row\"><span>Manche verlängern sich</span><span>um 12 Monate</span></div>\n<div class=\"src\">Typische Preise für kleine Betriebe. Quelle: Marktguides.</div></div>"
+  },
+  {
+   "bg": "nebel",
+   "html": "<h2 style=\"font-size:120px\">So rechnet <em>Chispa.</em></h2>\n<div class=\"rc\" style=\"margin-top:56px;background:#fff\">\n<div style=\"font-weight:700;letter-spacing:4px\">PAKET CHISPA · EINMAL</div>\n<div class=\"row\"><span>Posts mit Caption</span><span>20</span></div>\n<div class=\"row\"><span>Stories</span><span>20</span></div>\n<div class=\"row\"><span>Reels mit Stimme</span><span>3</span></div>\n<div class=\"row\"><span>Abo</span><span>keins</span></div>\n<div class=\"tot\">699 € <span style=\"font-size:56px\">einmal.</span></div>\n<div class=\"src\">Nachkaufen jederzeit, kündigen nie.</div></div>"
+  },
+  {
+   "bg": "tinte",
+   "html": "<h2 style=\"font-size:120px\">Im <em>Vergleich.</em></h2>\n<table style=\"margin-top:50px\"><tr><th></th><th>Abo</th><th>Chispa</th></tr>\n<tr><td class=\"muted\">Zahlung</td><td>jeden Monat</td><td><b>einmal</b></td></tr>\n<tr><td class=\"muted\">Bindung</td><td>oft 3–12 Monate</td><td><b>keine</b></td></tr>\n<tr><td class=\"muted\">Abstimmung</td><td>Calls, Termine</td><td><b>ein paar Fragen über WhatsApp</b></td></tr>\n<tr><td class=\"muted\">Preis</td><td>ca. 800–1.500 € im Monat*</td><td><b class=\"f\">ab 149 €</b></td></tr></table>\n<p style=\"margin-top:30px;font-size:24px\" class=\"muted\">* typische Preise für kleine Betriebe, Quelle: Marktguides</p>"
+  },
+  {
+   "bg": "petrol",
+   "html": "<div><span class=\"pill\">Zum Ausprobieren</span></div>\n<h1 style=\"margin-top:30px\">Erst mal<br>testen?</h1>\n<p style=\"margin-top:30px;font-size:44px\"><b>Prueba:</b> 5 Posts, 5 Stories, 1 Reel.<br><span class=\"muted\">Einmal pro Kunde.</span></p>\n<div class=\"bottom\"><div class=\"price\"><span class=\"f\">149 €</span></div><p style=\"font-size:38px\"><b>einmal.</b> Kein Abo.</p></div>"
+  },
+  {
+   "bg": "nebel",
+   "html": "<h1 style=\"font-size:200px;margin-top:140px\">Schreib uns auf <span class=\"f\">WhatsApp.</span></h1>\n<p style=\"margin-top:60px;font-size:44px\">Link in der Bio.<br><b>Einmal zahlen. Kein Abo.</b></p>"
+  }
+ ]
+}

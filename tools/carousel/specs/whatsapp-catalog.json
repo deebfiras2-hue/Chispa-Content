@@ -1,0 +1,29 @@
+{
+ "size": "1080x1080",
+ "slides": [
+  {
+   "bg": "nebel",
+   "file": "prueba.jpg",
+   "n": false,
+   "html": "<img class=\"spark\" src=\"SPARK\" style=\"right:84px;top:84px;width:110px\">\n<h1 style=\"font-size:200px\">Prueba</h1><p style=\"margin-top:14px;font-size:40px\"><b>Zum Ausprobieren. Einmal pro Kunde.</b></p>\n<p style=\"margin-top:50px;font-size:46px;line-height:1.5\">5 Posts mit Caption<br>5 Stories<br>1 Reel mit Sprecherstimme</p>\n<div class=\"bottom\"><div class=\"price\" style=\"font-size:180px\">149 €</div><p style=\"font-size:38px\"><b>einmal.</b> Kein Abo.</p></div>"
+  },
+  {
+   "bg": "nebel",
+   "file": "chispita.jpg",
+   "n": false,
+   "html": "<img class=\"spark\" src=\"SPARK\" style=\"right:84px;top:84px;width:110px\">\n<h1 style=\"font-size:200px\">Chispita</h1><p style=\"margin-top:14px;font-size:40px\"><b>Ein kleiner Funke.</b></p>\n<p style=\"margin-top:50px;font-size:46px;line-height:1.5\">10 Posts mit Caption<br>10 Stories<br>1 Reel mit Sprecherstimme</p>\n<div class=\"bottom\"><div class=\"price\" style=\"font-size:180px\">349 €</div><p style=\"font-size:38px\"><b>einmal.</b> Kein Abo.</p></div>"
+  },
+  {
+   "bg": "petrol",
+   "file": "chispa.jpg",
+   "n": false,
+   "html": "<img class=\"spark\" src=\"SPARK\" style=\"right:84px;top:84px;width:110px\">\n<div style=\"margin-bottom:18px\"><span class=\"pill\" style=\"font-size:32px\">Unsere Empfehlung</span></div><h1 style=\"font-size:200px\">Chispa</h1><p style=\"margin-top:14px;font-size:40px\"><b>Ein Funke.</b></p>\n<p style=\"margin-top:50px;font-size:46px;line-height:1.5\">20 Posts mit Caption<br>20 Stories<br>3 Reels mit Sprecherstimme</p>\n<div class=\"bottom\"><div class=\"price\" style=\"font-size:180px\">699 €</div><p style=\"font-size:38px\"><b>einmal.</b> Kein Abo.</p></div>"
+  },
+  {
+   "bg": "tinte",
+   "file": "chispazo.jpg",
+   "n": false,
+   "html": "<img class=\"spark\" src=\"SPARK\" style=\"right:84px;top:84px;width:110px\">\n<h1 style=\"font-size:200px\">Chispazo</h1><p style=\"margin-top:14px;font-size:40px\"><b>Ein Funkenregen.</b></p>\n<p style=\"margin-top:50px;font-size:46px;line-height:1.5\">50 Posts mit Caption<br>50 Stories<br>5 Reels mit Sprecherstimme</p>\n<div class=\"bottom\"><div class=\"price\" style=\"font-size:180px\">1.399 €</div><p style=\"font-size:38px\"><b>einmal.</b> Kein Abo.</p></div>"
+  }
+ ]
+}

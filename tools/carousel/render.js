@@ -15,6 +15,7 @@ const f = (p) => 'file://' + path.join(ROOT, p);
 const CSS = `
 @font-face{font-family:Karantina;font-weight:700;src:url(${f('fonts/Karantina-700-latin.woff2')}) format('woff2');}
 @font-face{font-family:Karantina;font-weight:700;src:url(${f('fonts/Karantina-700-latin-ext.woff2')}) format('woff2');unicode-range:U+0100-024F,U+1E00-1EFF;}
+@font-face{font-family:JBM;font-weight:500;src:url(${f('reel-v2/public/themes/common/JetBrainsMono-500.woff2')});}
 @font-face{font-family:Noto;font-weight:400;src:url(${f('fonts/NotoSans-400-latin.woff2')});}
 @font-face{font-family:Noto;font-weight:500;src:url(${f('fonts/NotoSans-500-latin.woff2')});}
 @font-face{font-family:Noto;font-weight:600;src:url(${f('fonts/NotoSans-600-latin.woff2')});}
