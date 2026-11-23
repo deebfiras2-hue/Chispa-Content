@@ -1,0 +1,61 @@
+{
+  "timezone": "Europe/Berlin",
+  "days": [
+    {
+      "date": "2026-11-24",
+      "items": [
+        {
+          "id": "2026-11-24-reel",
+          "type": "reel",
+          "time": "19:00",
+          "title": "Zwei Friseure",
+          "video": "reels/2026-W48/01-zwei-friseure/reel.mp4",
+          "cover": "reels/2026-W48/01-zwei-friseure/cover.jpg",
+          "caption_file": "reels/2026-W48/01-zwei-friseure/caption.txt"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "items": [
+        {
+          "id": "2026-11-25-reel",
+          "type": "reel",
+          "time": "19:00",
+          "title": "Dein Schaufenster ist heute sechs Zoll groß",
+          "video": "reels/2026-11-25-3d-schaufenster/reel.mp4",
+          "cover": "reels/2026-11-25-3d-schaufenster/cover.jpg",
+          "caption_file": "reels/2026-11-25-3d-schaufenster/caption.txt"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "items": [
+        {
+          "id": "2026-11-26-reel",
+          "type": "reel",
+          "time": "19:00",
+          "title": "Zwei Werkstätten",
+          "video": "reels/2026-11-26-zwei-werkstaetten/reel.mp4",
+          "cover": "reels/2026-11-26-zwei-werkstaetten/cover.jpg",
+          "caption_file": "reels/2026-11-26-zwei-werkstaetten/caption.txt"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "items": [
+        {
+          "id": "2026-11-27-reel",
+          "type": "reel",
+          "time": "19:00",
+          "title": "Café vorher und nachher (Beispiel)",
+          "video": "reels/2026-11-27-vorher-nachher-cafe/reel.mp4",
+          "cover": "reels/2026-11-27-vorher-nachher-cafe/cover.jpg",
+          "caption_file": "reels/2026-11-27-vorher-nachher-cafe/caption.txt"
+        }
+      ]
+    }
+  ]
+}
