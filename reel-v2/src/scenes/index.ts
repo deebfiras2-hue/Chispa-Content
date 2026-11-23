@@ -10,6 +10,8 @@ import {Bars, barsCues} from './Bars';
 import {QuoteCard, quoteCues} from './QuoteCard';
 import {EndCard, endCues} from './EndCard';
 import {Globe, globeCues} from './Globe';
+import {ThreePhone, ThreeStore, ThreeTiles, ThreeTags, ThreeText, threeCues} from '../three/Three3D';
+import {KinWords, kinCues} from '../kinetic/Kinetic';
 import {LATitle, LASplit, LATransform, LACounter, LAFlow, LAReveal, LAEnd, laCues} from '../lineart/LineArt';
 
 type Def = {component: React.FC<any>; cues?: (p: any, dur: number, words?: any) => Sfx[]};
@@ -34,4 +36,12 @@ export const SCENES: Record<string, Def> = {
   'la-flow': {component: LAFlow, cues: laCues},
   'la-reveal': {component: LAReveal, cues: laCues},
   'la-end': {component: LAEnd, cues: laCues},
+  // 3D mode (src/three/Three3D.tsx)
+  '3d-phone': {component: ThreePhone, cues: threeCues},
+  '3d-store': {component: ThreeStore, cues: threeCues},
+  '3d-tiles': {component: ThreeTiles, cues: threeCues},
+  '3d-tags': {component: ThreeTags, cues: threeCues},
+  '3d-text': {component: ThreeText, cues: threeCues},
+  // KINETIC mode (src/kinetic/Kinetic.tsx)
+  'kin-words': {component: KinWords, cues: kinCues},
 };

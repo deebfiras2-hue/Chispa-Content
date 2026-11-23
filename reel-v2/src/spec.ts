@@ -29,7 +29,7 @@ export type ReelSpec = {
   theme?: string;
   /** "graphics" (photo/news scenes + top bar + word captions) or "lineart" (la-* scenes + typed narration).
    *  Default: "lineart" when the first scene is an la-* scene. */
-  mode?: 'graphics' | 'lineart';
+  mode?: 'graphics' | 'lineart' | '3d' | 'kinetic';
   /** LINEART narration: typed word by word, one sentence at a time (pos "bottom" = lower-left, "top" = top-left) */
   narration?: {pos?: 'bottom' | 'top'; x?: number; y?: number; size?: number; width?: number} | false;
   fps?: number;

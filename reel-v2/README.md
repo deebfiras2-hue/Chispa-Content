@@ -180,7 +180,7 @@ Elements DRAW ON stroke by stroke (stroke-dashoffset, lengths from `@remotion/pa
 strokes. SFX are automatic (soft tick per drawn pictogram, pop on accents / lit, whoosh on camera pushes and `fade`
 transitions); music is ducked from the word timings (`speechDb` −20 ≈ the requested −20 dB under speech).
 
-Mode: `"mode": "lineart"` (or automatic when the first scene is an `la-*` scene) → no top bar / word captions, typed
+Mode: `"mode": "lineart"` (or automatic when the first scene is an `la-*` scene; `"3d"` and `"kinetic"` behave the same) → no top bar / word captions, typed
 narration instead. Scenes can still be mixed with GRAPHICS scenes in one spec. Use `"transition": "fade"` between
 line-art scenes.
 
@@ -202,7 +202,7 @@ moves to the centre at zoom s; slow push `drift` 0.035 by default), `narration: 
 | `la-title` | big centred title (+ label) | `titleY`, `titleSize` |
 | `la-split` | A-vs-B on one thin ground line (person – object – person) or two halves with a dashed divider; one side then changes through item `keys` (lit / dim / pose / walk) | `ground` (y or false), `groundFrom/To`, `divider`, `sides: ["A","B"]`, `sidesY` |
 | `la-transform` | pictogram `from` undraws while `to` draws in its place with a pop | `from`, `to` (items), `morphAt` |
-| `la-counter` | big monospace number counting up + mono caption | `value`, `start`, `at`, `countDur`, `prefix`, `suffix`, `decimals`, `caption`, `y` |
+| `la-counter` | big monospace number counting up + mono caption (+ `source` line) | `value`, `from`, `group` (thousands separator), `source`, `at`, `countDur`, `prefix`, `suffix`, `decimals`, `caption`, `y` |
 | `la-flow` | icons connected by drawing arrows, one after another | `nodes: [{kind, label, params, accent}]`, `at`, `step`, `dir` (`h`/`v`), `y` |
 | `la-reveal` | statement revealed word by word in sync with the voice, accent word + drawn underline | `lines: [{text, fromWord, accent: [..], size, font: title|text, y}]` |
 | `la-end` | theme end card: logo/wordmark, line, sign-off typed in sync, outro word, small note | `signoff`, `fromWord`, `outro`, `outroWord`, `note` |
@@ -279,3 +279,98 @@ Quick QA without a full render: `node scripts/stills.mjs specs/<id>.json sheet.j
 }
 ```
 (abridged — see the full file for every prop).
+
+---
+
+# 3D mode (`3d-*` scenes, `src/three/`)
+
+Premium, slow 3D with `@remotion/three` + `@react-three/fiber` (three 0.170): soft studio lighting (warm key, Petrol
+rim, hemisphere fill), Tinte fog for depth, Nebel surfaces, Funke as the single accent, slow camera moves plus a gentle
+automatic drift. Screens, tiles, tags and signs are Canvas-2D textures drawn in the theme fonts (`src/three/draw.ts`).
+3D scenes share the LINEART stage, so `title`, `label`/`labels`, `items` overlays (e.g. a „BEISPIEL“ stamp) and the typed
+narration work as usual. Use `"mode": "3d"` (or start with a `3d-*` scene); mix freely with `la-*` and `kin-*` scenes.
+
+**Headless WebGL:** renders with `--gl=swangle` (set in `remotion.config.ts`; `scripts/stills.mjs` passes it too). No GPU
+needed. Cost: about **0.7 s per frame on 4 vCPU** (≈ 12–14 min for a 34 s reel), roughly 2× a LINEART reel. Keep geometry
+light (boxes, capsules, planes); there is no post-processing (depth of field is faked with fog). Test stills first.
+The WebGL canvas mounts only once the theme fonts are loaded (`useFontsReady`), otherwise canvas text would fall back
+to a serif font on the first frame of each render tab.
+
+Shared keys: `cam: [{at, dur, ease, az, el, dist, tx, ty, tz, fov}]` (orbit camera: azimuth/elevation in degrees,
+distance, look-at target; each key eases from the previous state, `dur: 0` sets the start), `fog: [near, far]`,
+`light` (Funke point light 0–1).
+
+| type | what | extra props |
+|---|---|---|
+| `3d-phone` | stylised smartphone (rounded body, camera bump, buttons) floating and turning; the screen is a live texture | `phone: [{at, dur, x, y, z, rx, ry, rz, s}]`, `screen` or `screens: [{at, kind, …}]`, `float`, `shadow` |
+| `3d-store` | low-poly street: hero storefront (Funke-striped awning, lit window, sign), neighbours, people walking past on their phones | `sign`, `neighbors: [..]` (up to 4 signs, `false` = none), `walkers: [{at, from, to, dur, z, phone}]`, `litAt` |
+| `3d-tiles` | 3×3 feed tiles floating out of line in depth, grey irregular „before“ tiles flip one by one to a calm Chispa feed and settle into a tidy grid | `flipAt`, `step`, `order` (`row`/`random`), `motifs`, `accentTile`, `cols`, `rows`, `gap` |
+| `3d-tags` | price tags (extruded, with hole) or receipts drop, bounce and stack | `tags: [{text, sub, at, accent, kind: tag/receipt, lines, total, x}]` |
+| `3d-text` | headline lines on planes swinging up out of depth (Karantina), optional Funke underline | `lines: [{text, at / fromWord, size, y, accent, font}]` |
+
+Screen kinds (`screen.kind`): `store` (a shop window drawn on the phone, `sign`), `profile` (avatar, info pill, grid;
+`checks: [{key: photo/hours/week, at}]` light up one by one, only the latest carries the Funke accent; `info:
+"Di–Sa 9–18 Uhr|Hauptstr. 12"`), `feed` (`tiles: fresh/grey/empty`, `freshAt`, `step`, `staleAt`, `stamp: {text, at}`,
+`motifs`), `chat` (`name`, `messages: [{from: me/them, text, at}]`, typing dots before replies), `post` (`motif`,
+`caption`), `blank`. Motifs: `cup croissant cake store hours pin team wrench car bean week text:Zeile1|Zeile2`.
+
+### Worked example — 3D (`specs/3d-schaufenster.json`, abridged)
+
+```jsonc
+{
+  "id": "3d-schaufenster", "theme": "chispa", "mode": "3d",
+  "voice": {"src": "3d-schaufenster/voice.mp3", "words": "3d-schaufenster/words.json"},
+  "scenes": [
+    {"type": "3d-phone", "start": 0, "narration": false, "title": "Dein Schaufenster ist heute sechs Zoll groß.",
+     "screen": {"kind": "store", "sign": "DEIN LADEN"},
+     "phone": [{"at": 0, "dur": 0, "ry": -1.1}, {"at": 0, "dur": 1.8, "ry": -0.28, "ease": "out"}],
+     "cam": [{"at": 0, "dur": 0, "dist": 15.5}, {"at": "w6", "dur": 0.75, "dist": 3.0}]},   // dive into the screen …
+    {"type": "3d-store", "start": "w7", "transition": "zoom", "title": "Sie laufen vorbei.",  // … and land in the street
+     "neighbors": ["BÄCKEREI", "SALON"], "walkers": [{"at": 0, "from": -8, "to": 8, "dur": 9}],
+     "cam": [{"at": 0, "dur": 3, "dist": 16, "az": 20, "ease": "out"}]},
+    {"type": "3d-phone", "start": "w28", "title": "Drei Dinge.",
+     "screen": {"kind": "profile", "checks": [{"key": "photo", "at": "w35"}, {"key": "hours", "at": "w39"}, {"key": "week", "at": "w45"}]},
+     "cam": [{"at": "w33", "dur": 1, "dist": 8.5, "tx": -0.35, "ty": 1.05}]},
+    {"type": "3d-tiles", "start": "w9", "title": "Café Morgenrot.", "flipAt": "w22", "step": 0.16, "order": "random", "accentTile": 4}
+  ]
+}
+```
+
+# KINETIC mode (`kin-words`, `src/kinetic/Kinetic.tsx`)
+
+Swiss / kinetic typography like reels 02 and 15: huge Karantina words on a flat Nebel, Petrol or Tinte field, a thin
+Swiss grid (two verticals, two rules), tiny mono meta text (`meta` top left, beat counter `01 / 03` top right) and
+**exactly one Funke stroke per beat**. Lines auto-fit the 936 px grid width (measured in the DOM with the real font).
+Typed narration is hidden during `kin-*` scenes (the words are the picture).
+
+| prop | meaning |
+|---|---|
+| `bg` | `nebel` (Tinte text) / `petrol` / `tinte` (Nebel text); a beat can switch `bg` (wipes up) |
+| `beats: [{fromWord / at, lines, anim, stroke, align, y, bg}]` | each beat holds until the next one, then masks out upwards |
+| `lines: [{text, size, accent: [word], fromWord / at, font: title/text/mono, color: muted}]` | accent words turn Funke |
+| `anim` | `snap` (scale 1.35 → 1 with blur, hit SFX), `mask` (rises out of a mask), `slide` (alternating from left/right with skew), `stack` (drops from above) |
+| `stroke` | `under` (bar under the accent word), `circle` (hand-drawn ellipse round it), `strike` (crossed out), `bar` (vertical bar left of the block), `none` |
+
+### Worked example — KINETIC (send prompt from `specs/3d-schaufenster.json`)
+
+```jsonc
+{"type": "kin-words", "start": "w49", "transition": "fade", "bg": "nebel", "meta": "WEITERSAGEN",
+ "beats": [
+   {"fromWord": 49, "anim": "snap", "stroke": "bar",
+    "lines": [{"text": "Schick das", "size": 250}, {"text": "einem Inhaber,", "size": 250, "fromWord": 51}]},
+   {"fromWord": 53, "anim": "mask", "stroke": "circle",
+    "lines": [{"text": "der zuletzt", "size": 230}, {"text": "im März", "size": 300, "accent": ["März"], "fromWord": 55},
+              {"text": "gepostet hat.", "size": 230, "fromWord": 57}]}
+ ]}
+```
+
+# CHARACTER mode (planned)
+
+Talking objects (a shop, a phone, a till) with mouth shapes driven by the word timings, like reel 17. Not built yet;
+planned for week 2 as a `3d-character` scene on top of the 3D stage.
+
+## Voice helper
+
+`python3 scripts/voice.py <id> <voice_id> "<text>" [--tempo 1.0]` calls ElevenLabs `/with-timestamps` (eleven_v3,
+`language_code: de`, stability 0.5, similarity 0.8; key from `$ELEVENLABS_API_KEY`) and writes `public/<id>/voice.mp3`,
+`words.json` and `alignment_raw.json`.

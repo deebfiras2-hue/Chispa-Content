@@ -86,9 +86,10 @@ export const Reel: React.FC<ResolvedProps> = (p) => {
   }, [tl]);
   const sfxVol = p.sfxVolume ?? 1;
   const theme = useThemeSetup(p.theme);
-  const lineart = (p.mode ?? (tl[0]?.type.startsWith('la-') ? 'lineart' : 'graphics')) === 'lineart';
+  // LINEART, 3D and KINETIC share the typed narration + theme end card (no top bar / word captions)
+  const lineart = (p.mode ?? (/^(la|3d|kin)-/.test(tl[0]?.type ?? '') ? 'lineart' : 'graphics')) !== 'graphics';
   const narHidden = useMemo(() => {
-    const ranges = tl.filter((s) => s.narration === false || s.type === 'la-end' || s.type === 'la-reveal').map((s) => [s.t0, s.t1]);
+    const ranges = tl.filter((s) => s.narration === false || s.type === 'la-end' || s.type === 'la-reveal' || s.type.startsWith('kin-')).map((s) => [s.t0, s.t1]);
     return (t: number) => ranges.some(([a, b]) => t >= a - 0.05 && t < b - 0.05);
   }, [tl]);
 

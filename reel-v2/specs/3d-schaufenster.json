@@ -1,0 +1,331 @@
+{
+ "id": "3d-schaufenster",
+ "theme": "chispa",
+ "mode": "3d",
+ "voice": {
+  "src": "3d-schaufenster/voice.mp3",
+  "words": "3d-schaufenster/words.json"
+ },
+ "music": {
+  "src": "music/curious-2.mp3",
+  "speechDb": -20,
+  "gapDb": -15,
+  "tailDb": -12
+ },
+ "narration": {
+  "pos": "bottom",
+  "y": 1490,
+  "size": 54
+ },
+ "cover": {
+  "frame": 66
+ },
+ "scenes": [
+  {
+   "type": "3d-phone",
+   "start": 0,
+   "narration": false,
+   "title": "Dein Schaufenster ist heute sechs Zoll groß.",
+   "titleY": 330,
+   "titleSize": 128,
+   "screen": {
+    "kind": "store",
+    "sign": "DEIN LADEN"
+   },
+   "phone": [
+    {
+     "at": 0,
+     "dur": 0,
+     "ry": -1.1,
+     "rx": -0.05,
+     "y": -0.95
+    },
+    {
+     "at": 0,
+     "dur": 1.8,
+     "ry": -0.28,
+     "ease": "out"
+    }
+   ],
+   "cam": [
+    {
+     "at": 0,
+     "dur": 0,
+     "dist": 15.5,
+     "ty": -0.7
+    },
+    {
+     "at": "w6",
+     "dur": 0.75,
+     "dist": 3.0,
+     "ty": -0.5,
+     "az": 0,
+     "ease": "inOut"
+    }
+   ]
+  },
+  {
+   "type": "3d-store",
+   "start": "w7",
+   "transition": "zoom",
+   "title": "Sie laufen vorbei.",
+   "labels": [
+    {
+     "at": 0.3,
+     "text": "D I E   L E U T E"
+    },
+    {
+     "at": "w14",
+     "text": "Z U E R S T   A U F S   H A N D Y"
+    }
+   ],
+   "sign": "DEIN LADEN",
+   "neighbors": [
+    "BÄCKEREI",
+    "SALON",
+    "CAFÉ",
+    "WERKSTATT"
+   ],
+   "walkers": [
+    {
+     "at": -1,
+     "from": -8,
+     "to": 8,
+     "dur": 9,
+     "z": 1.5
+    },
+    {
+     "at": 0.4,
+     "from": 8,
+     "to": -8,
+     "dur": 8.5,
+     "z": 0.9
+    },
+    {
+     "at": 1.6,
+     "from": -8,
+     "to": 8,
+     "dur": 8,
+     "z": 1.3
+    },
+    {
+     "at": 2.6,
+     "from": 9,
+     "to": -8,
+     "dur": 7.5,
+     "z": 1.0
+    }
+   ],
+   "cam": [
+    {
+     "at": 0,
+     "dur": 0,
+     "dist": 8.5,
+     "az": 2,
+     "el": 4,
+     "ty": 1.6
+    },
+    {
+     "at": 0,
+     "dur": 3.0,
+     "dist": 16,
+     "az": 20,
+     "el": 9,
+     "ease": "out"
+    },
+    {
+     "at": "w14",
+     "dur": 2.2,
+     "dist": 9.5,
+     "az": -8,
+     "el": 5,
+     "tx": -0.4,
+     "ty": 1.4,
+     "tz": 0.6
+    }
+   ]
+  },
+  {
+   "type": "3d-phone",
+   "start": "w20",
+   "transition": "fade",
+   "title": "Was sehen sie?",
+   "label": "W E N N   S I E   D I C H   F I N D E N",
+   "screen": {
+    "kind": "profile",
+    "name": "dein.laden",
+    "info": "Di–Sa 9–18 Uhr|Hauptstr. 12"
+   },
+   "phone": [
+    {
+     "at": 0,
+     "dur": 0,
+     "ry": 0.9,
+     "y": 0.0
+    },
+    {
+     "at": 0,
+     "dur": 1.4,
+     "ry": -0.2,
+     "ease": "out"
+    }
+   ],
+   "cam": [
+    {
+     "at": 0,
+     "dur": 0,
+     "dist": 19
+    }
+   ]
+  },
+  {
+   "type": "3d-phone",
+   "start": "w28",
+   "transition": "cut",
+   "title": "Drei Dinge.",
+   "labels": [
+    {
+     "at": 0.1,
+     "text": "M Ü S S E N   D A   S E I N"
+    },
+    {
+     "at": "w33",
+     "text": "0 1   A K T U E L L E S   F O T O"
+    },
+    {
+     "at": "w37",
+     "text": "0 2   Z E I T E N   +   O R T"
+    },
+    {
+     "at": "w44",
+     "text": "0 3   D I E S E   W O C H E"
+    }
+   ],
+   "screen": {
+    "kind": "profile",
+    "name": "dein.laden",
+    "info": "Di–Sa 9–18 Uhr|Hauptstr. 12",
+    "checks": [
+     {
+      "key": "photo",
+      "at": "w35"
+     },
+     {
+      "key": "hours",
+      "at": "w39"
+     },
+     {
+      "key": "week",
+      "at": "w45"
+     }
+    ]
+   },
+   "phone": [
+    {
+     "at": 0,
+     "dur": 0,
+     "ry": -0.2,
+     "y": 0.0
+    },
+    {
+     "at": "w33",
+     "dur": 1.0,
+     "ry": -0.08
+    }
+   ],
+   "cam": [
+    {
+     "at": 0,
+     "dur": 0,
+     "dist": 19
+    },
+    {
+     "at": "w33",
+     "dur": 1.0,
+     "dist": 8.5,
+     "tx": -0.35,
+     "ty": 1.05
+    },
+    {
+     "at": "w37",
+     "dur": 1.0,
+     "dist": 8.5,
+     "tx": 0.0,
+     "ty": 0.8
+    },
+    {
+     "at": "w44",
+     "dur": 1.0,
+     "dist": 8,
+     "tx": -0.25,
+     "ty": 0.6
+    },
+    {
+     "at": "w48",
+     "dur": 1.0,
+     "dist": 17,
+     "tx": 0,
+     "ty": 0
+    }
+   ]
+  },
+  {
+   "type": "kin-words",
+   "start": "w49",
+   "transition": "fade",
+   "bg": "nebel",
+   "meta": "WEITERSAGEN",
+   "beats": [
+    {
+     "fromWord": 49,
+     "anim": "snap",
+     "lines": [
+      {
+       "text": "Schick das",
+       "size": 250
+      },
+      {
+       "text": "einem Inhaber,",
+       "size": 250,
+       "fromWord": 51
+      }
+     ],
+     "stroke": "bar"
+    },
+    {
+     "fromWord": 53,
+     "anim": "mask",
+     "lines": [
+      {
+       "text": "der zuletzt",
+       "size": 230
+      },
+      {
+       "text": "im März",
+       "size": 300,
+       "accent": [
+        "März"
+       ],
+       "fromWord": 55
+      },
+      {
+       "text": "gepostet hat.",
+       "size": 230,
+       "fromWord": 57
+      }
+     ],
+     "stroke": "circle"
+    }
+   ]
+  },
+  {
+   "type": "la-end",
+   "start": "w59",
+   "transition": "fade",
+   "signoff": "Content, der den Daumen stoppt.",
+   "fromWord": 59,
+   "outro": "Chispa!",
+   "outroWord": 64
+  }
+ ]
+}

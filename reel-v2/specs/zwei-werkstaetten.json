@@ -1,0 +1,420 @@
+{
+ "id": "zwei-werkstaetten",
+ "theme": "chispa",
+ "mode": "lineart",
+ "voice": {
+  "src": "zwei-werkstaetten/voice.mp3",
+  "words": "zwei-werkstaetten/words.json"
+ },
+ "music": {
+  "src": "music/curious-1.mp3",
+  "speechDb": -20,
+  "gapDb": -15,
+  "tailDb": -12
+ },
+ "narration": {
+  "pos": "bottom",
+  "y": 1470,
+  "size": 56
+ },
+ "cover": {
+  "frame": 75
+ },
+ "scenes": [
+  {
+   "type": "la-split",
+   "start": 0,
+   "bg": "warm",
+   "title": "Zwei Werkstätten.",
+   "labels": [
+    {
+     "at": 0.2,
+     "text": "B E I D E   S U C H E N"
+    },
+    {
+     "at": "w6",
+     "text": "E I N   B E W E R B E R"
+    }
+   ],
+   "ground": 1150,
+   "camera": [
+    {
+     "at": "w13",
+     "dur": 0.8,
+     "x": 569,
+     "y": 1000,
+     "s": 5.5
+    }
+   ],
+   "items": [
+    {
+     "kind": "storefront",
+     "x": 290,
+     "y": 1150,
+     "s": 2.1,
+     "params": {
+      "text": "WERKSTATT"
+     },
+     "at": 0.25,
+     "dd": 1.0
+    },
+    {
+     "kind": "storefront",
+     "x": 790,
+     "y": 1150,
+     "s": 2.1,
+     "params": {
+      "text": "WERKSTATT"
+     },
+     "at": "w1",
+     "dd": 1.0
+    },
+    {
+     "kind": "toolbox",
+     "x": 215,
+     "y": 1150,
+     "s": 1.1,
+     "at": 1.0,
+     "dd": 0.6
+    },
+    {
+     "kind": "toolbox",
+     "x": 715,
+     "y": 1150,
+     "s": 1.1,
+     "at": "w2",
+     "dd": 0.6
+    },
+    {
+     "type": "text",
+     "text": "AZUBI GESUCHT",
+     "font": "mono",
+     "size": 30,
+     "spacing": 4,
+     "box": true,
+     "x": 290,
+     "y": 760,
+     "width": 360,
+     "at": "w5",
+     "anim": "fade",
+     "dd": 0.25,
+     "out": "w6+0.3",
+     "sfx": "sfx/snap.mp3"
+    },
+    {
+     "type": "text",
+     "text": "AZUBI GESUCHT",
+     "font": "mono",
+     "size": 30,
+     "spacing": 4,
+     "box": true,
+     "x": 790,
+     "y": 760,
+     "width": 360,
+     "at": "w5+0.15",
+     "anim": "fade",
+     "dd": 0.25,
+     "out": "w6+0.3"
+    },
+    {
+     "kind": "person",
+     "x": 460,
+     "y": 1150,
+     "s": 1.9,
+     "at": "w6",
+     "dd": 0.8,
+     "keys": [
+      {
+       "at": "w7",
+       "dur": 1.3,
+       "x": 540,
+       "walk": true
+      },
+      {
+       "at": "w11",
+       "pose": "phone"
+      },
+      {
+       "at": "w13-0.1",
+       "dur": 0.3,
+       "lit": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "la-split",
+   "start": "w15",
+   "transition": "fade",
+   "title": "Zwei Werkstätten.",
+   "label": "I N S T A G R A M",
+   "ground": false,
+   "sides": [
+    "N R .  1",
+    "N R .  2"
+   ],
+   "sidesY": 1112,
+   "items": [
+    {
+     "kind": "phone",
+     "x": 290,
+     "y": 860,
+     "s": 5.0,
+     "at": 0,
+     "dd": 0.8,
+     "params": {
+      "screen": "blank"
+     }
+    },
+    {
+     "type": "grid",
+     "x": 290,
+     "y": 872,
+     "w": 165,
+     "at": 0.3,
+     "dd": 0.8,
+     "content": "empty"
+    },
+    {
+     "type": "text",
+     "text": "NICHTS",
+     "font": "mono",
+     "size": 40,
+     "spacing": 6,
+     "box": true,
+     "x": 290,
+     "y": 846,
+     "width": 260,
+     "at": "w18",
+     "anim": "fade",
+     "dd": 0.25,
+     "sfx": "sfx/snap.mp3"
+    },
+    {
+     "kind": "phone",
+     "x": 790,
+     "y": 860,
+     "s": 5.0,
+     "at": "w23",
+     "dd": 0.8,
+     "params": {
+      "screen": "blank"
+     }
+    },
+    {
+     "type": "grid",
+     "x": 790,
+     "y": 872,
+     "w": 165,
+     "at": "w23+0.25",
+     "dd": 0.8,
+     "content": "empty",
+     "fresh": {
+      "at": "w26",
+      "step": 0.16
+     }
+    },
+    {
+     "kind": "wrench",
+     "x": 700,
+     "y": 1205,
+     "s": 0.9,
+     "at": "w27",
+     "dd": 0.5
+    },
+    {
+     "kind": "crowd",
+     "x": 790,
+     "y": 1232,
+     "s": 0.55,
+     "at": "w29",
+     "dd": 0.6,
+     "params": {
+      "n": 3
+     }
+    },
+    {
+     "kind": "car",
+     "x": 885,
+     "y": 1215,
+     "s": 0.8,
+     "at": "w32",
+     "dd": 0.6
+    }
+   ]
+  },
+  {
+   "type": "la-split",
+   "start": "w36",
+   "transition": "fade",
+   "title": "Wo bewirbst du dich?",
+   "label": "U N D   D U ?",
+   "ground": 1150,
+   "items": [
+    {
+     "kind": "storefront",
+     "x": 290,
+     "y": 1150,
+     "s": 2.1,
+     "params": {
+      "text": "WERKSTATT"
+     },
+     "at": 0,
+     "dd": 0.6,
+     "sfx": false,
+     "keys": [
+      {
+       "at": "w39",
+       "dur": 0.8,
+       "dim": 0.75
+      }
+     ]
+    },
+    {
+     "kind": "storefront",
+     "x": 790,
+     "y": 1150,
+     "s": 2.1,
+     "params": {
+      "text": "WERKSTATT"
+     },
+     "at": 0,
+     "dd": 0.6,
+     "sfx": false,
+     "keys": [
+      {
+       "at": "w38",
+       "dur": 0.6,
+       "lit": 1
+      }
+     ]
+    },
+    {
+     "kind": "question",
+     "x": 545,
+     "y": 880,
+     "s": 1.7,
+     "at": 0.3,
+     "dd": 0.6,
+     "out": "w38",
+     "sfx": "sfx/pop.mp3"
+    },
+    {
+     "kind": "person",
+     "x": 540,
+     "y": 1150,
+     "s": 1.9,
+     "at": 0,
+     "dd": 0.5,
+     "sfx": false,
+     "keys": [
+      {
+       "at": "w38+0.05",
+       "dur": 1.4,
+       "x": 870,
+       "walk": true
+      }
+     ],
+     "out": "w41",
+     "outDur": 0.4
+    }
+   ]
+  },
+  {
+   "type": "la-counter",
+   "start": "w41",
+   "transition": "fade",
+   "title": "Im Handwerk.",
+   "label": "2 0 2 5",
+   "value": 16000,
+   "at": "w42-0.3",
+   "countDur": 1.4,
+   "group": ".",
+   "y": 800,
+   "caption": "AUSBILDUNGSPLÄTZE BLIEBEN FREI",
+   "source": "Quelle: DHZ",
+   "items": [
+    {
+     "type": "text",
+     "text": "ÜBER",
+     "font": "mono",
+     "size": 44,
+     "spacing": 10,
+     "color": "muted",
+     "x": 540,
+     "y": 700,
+     "at": "w41",
+     "anim": "fade",
+     "dd": 0.3
+    }
+   ]
+  },
+  {
+   "type": "la-reveal",
+   "start": "w50",
+   "transition": "fade",
+   "y": 400,
+   "lines": [
+    {
+     "text": "Zeig deinen Betrieb,",
+     "fromWord": 51,
+     "accent": [
+      "Betrieb"
+     ],
+     "size": 125,
+     "y": 380
+    },
+    {
+     "text": "bevor du eine Stelle ausschreibst.",
+     "fromWord": 54,
+     "font": "text",
+     "size": 54,
+     "y": 560
+    }
+   ],
+   "items": [
+    {
+     "type": "line",
+     "from": [
+      150,
+      1200
+     ],
+     "to": 930,
+     "at": 0.2,
+     "dd": 0.7,
+     "sfx": false,
+     "glow": 0.4
+    },
+    {
+     "kind": "storefront",
+     "x": 540,
+     "y": 1200,
+     "s": 1.75,
+     "at": 0.3,
+     "dd": 1.1,
+     "params": {
+      "text": "DEIN BETRIEB"
+     }
+    },
+    {
+     "kind": "feed",
+     "x": 486,
+     "y": 1112,
+     "s": 0.85,
+     "at": "w52",
+     "dd": 0.8
+    }
+   ]
+  },
+  {
+   "type": "la-end",
+   "start": "w59",
+   "transition": "fade",
+   "signoff": "Content, der den Daumen stoppt.",
+   "fromWord": 59,
+   "outro": "Chispa!",
+   "outroWord": 64
+  }
+ ]
+}

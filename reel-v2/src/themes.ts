@@ -1,5 +1,6 @@
 // Theme system: one spec field `"theme": "zoomedout" | "behindthebrand" | "chispa"` picks colours, fonts, logo
 // and end card for BOTH modes (GRAPHICS = the photo/news scenes, LINEART = the la-* line-art scenes).
+import {useEffect, useState} from 'react';
 import {continueRender, delayRender, staticFile} from 'remotion';
 import {C} from './theme';
 
@@ -143,3 +144,21 @@ export const useThemeSetup = (id?: string) => {
   return t;
 };
 const BASE_C = {...C};
+const done: Record<string, boolean> = {};
+/** re-renders the caller once the theme fonts are loaded (canvas text and DOM measurements need the real font) */
+export const useFontsReady = (id?: string) => {
+  const t = getTheme(id);
+  const [ok, setOk] = useState(!!done[t.id] || typeof document === 'undefined');
+  useEffect(() => {
+    if (ok) return;
+    const h = delayRender('fonts ready ' + t.id);
+    (loaded[t.id] ?? Promise.resolve())
+      .then(() => document.fonts.ready)
+      .then(() => {
+        done[t.id] = true;
+        setOk(true);
+        continueRender(h);
+      });
+  }, [ok, t.id]);
+  return ok;
+};

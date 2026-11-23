@@ -5,20 +5,20 @@ import React from 'react';
 import {AbsoluteFill, Img, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {getBoundingBox, getLength} from '@remotion/paths';
 import {Sfx, Word} from '../spec';
-import {getTheme, Theme} from '../themes';
+import {getTheme, Theme, useFontsReady} from '../themes';
 import {clamp, ease, lerp, smooth} from '../lib/anim';
 import {PictoParams, pictoSegs, Seg, circle, rect, line as pline} from './picto';
 
 // ---------------------------------------------------------------- helpers
-type TimeRef = number | string;
-const wordT = (s: TimeRef, words: Word[]) => {
+export type TimeRef = number | string;
+export const wordT = (s: TimeRef, words: Word[]) => {
   if (typeof s === 'number') return s;
   const m = /^w(\d+)([+-][\d.]+)?$/.exec(s);
   if (!m) throw new Error('bad time ' + s);
   return words[Math.min(+m[1], words.length - 1)][1] + (m[2] ? +m[2] : 0);
 };
 /** scene-relative seconds: numbers are relative to the scene start, "w12" refs are absolute word times */
-const rel = (v: TimeRef | undefined, words: Word[], sceneStart: number, d = 0) =>
+export const rel = (v: TimeRef | undefined, words: Word[], sceneStart: number, d = 0) =>
   v === undefined ? d : typeof v === 'number' ? v : wordT(v, words) - sceneStart;
 
 const hex = (c: string) => {
@@ -31,7 +31,7 @@ export const mix = (a: string, b: string, t: number) => {
   const x = hex(a), y = hex(b), k = clamp(t);
   return `rgb(${x.map((v, i) => Math.round(v + (y[i] - v) * k)).join(',')})`;
 };
-const alpha = (c: string, a: number) => `rgba(${hex(c).join(',')},${a})`;
+export const alpha = (c: string, a: number) => `rgba(${hex(c).join(',')},${a})`;
 
 const lenCache = new Map<string, number>();
 const plen = (d: string) => {
@@ -104,6 +104,7 @@ export type Item = {
   decimals?: number;
   prefix?: string;
   suffix?: string;
+  group?: string; // thousands separator, e.g. "." for German
 };
 
 type St = {x: number; y: number; s: number; o: number; dim: number; lit: number; pose?: string; phase: number; flip: boolean};
@@ -247,7 +248,7 @@ const LineSvg: React.FC<{
 };
 
 // ---------------------------------------------------------------- elements
-type Ctx = {t: number; th: Theme; words: Word[]; t0: number; fps: number; uid: string};
+export type Ctx = {t: number; th: Theme; words: Word[]; t0: number; fps: number; uid: string};
 
 const drawProgress = (it: Item, c: Ctx, defDd = 0.9) => {
   const a = rel(it.at, c.words, c.t0);
@@ -477,7 +478,8 @@ const CounterEl: React.FC<{it: Item; c: Ctx}> = ({it, c}) => {
   if (t < a) return null;
   const p = ease.out(clamp((t - a) / (it.dur ?? 1.4)));
   const v = lerp(it.start ?? 0, it.value ?? 100, p);
-  const txt = `${it.prefix ?? ''}${v.toFixed(it.decimals ?? 0)}${it.suffix ?? ''}`;
+  const num = it.group ? v.toFixed(it.decimals ?? 0).replace(/\B(?=(\d{3})+(?!\d))/g, it.group) : v.toFixed(it.decimals ?? 0);
+  const txt = `${it.prefix ?? ''}${num}${it.suffix ?? ''}`;
   return <TextEl it={{...it, type: 'text', text: txt, anim: 'fade', dd: 0.25, font: it.font ?? 'mono', size: it.size ?? 150, color: it.color ?? 'line', glow: it.glow ?? 0.4}} c={c} />;
 };
 
@@ -628,13 +630,14 @@ const cameraAt = (p: LAProps, c: Ctx) => {
   return {x, y, s};
 };
 
-const useCtx = (p: LAProps): Ctx => {
+export const useCtx = (p: LAProps): Ctx => {
+  useFontsReady(p.theme);
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   return {t: frame / fps, th: getTheme(p.theme), words: p.words, t0: p.sceneStart, fps, uid: ''};
 };
 
-const Stage: React.FC<{p: LAProps; c: Ctx; items: Item[]; children?: React.ReactNode; front?: React.ReactNode}> = ({p, c, items, children, front}) => {
+export const Stage: React.FC<{p: LAProps; c: Ctx; items: Item[]; children?: React.ReactNode; front?: React.ReactNode}> = ({p, c, items, children, front}) => {
   const cam = cameraAt(p, c);
   return (
     <AbsoluteFill>
@@ -684,13 +687,15 @@ export const LATransform: React.FC<LAProps & {from: Item; to: Item; morphAt: Tim
 };
 
 /** la-counter: big monospace number counting up + small label, optional items around it. */
-export const LACounter: React.FC<LAProps & {value: number; start?: number; at?: TimeRef; countDur?: number; prefix?: string; suffix?: string; decimals?: number; caption?: string; y?: number}> = (p) => {
+export const LACounter: React.FC<LAProps & {value: number; start?: number; at?: TimeRef; countDur?: number; prefix?: string; suffix?: string; decimals?: number; caption?: string; y?: number; group?: string; source?: string; from?: number}> = (p) => {
   const c = useCtx(p);
   const y = p.y ?? 760;
   const items: Item[] = [
-    {type: 'counter', value: p.value, start: p.start ?? 0, at: p.at ?? 0.2, dur: p.countDur ?? 1.4, prefix: p.prefix, suffix: p.suffix, decimals: p.decimals, x: 540, y, size: 170, sfx: false},
+    {type: 'counter', value: p.value, start: p.from ?? 0, // `start` is the scene start, the count starts at `from`
+     at: p.at ?? 0.2, dur: p.countDur ?? 1.4, prefix: p.prefix, suffix: p.suffix, decimals: p.decimals, group: p.group, x: 540, y, size: 170, sfx: false},
   ];
   if (p.caption) items.push({type: 'text', text: p.caption, font: 'mono', size: 26, spacing: 6, color: 'muted', x: 540, y: y + 210, at: (typeof p.at === 'number' ? p.at : 0.2) + 0.4});
+  if (p.source) items.push({type: 'text', text: p.source, font: 'mono', size: 24, spacing: 3, color: 'muted', x: 540, y: y + 270, at: (typeof p.at === 'number' ? p.at : 0.2) + 0.6, anim: 'fade'});
   return <Stage p={p} c={c} items={[...items, ...(p.items ?? [])]} />;
 };
 

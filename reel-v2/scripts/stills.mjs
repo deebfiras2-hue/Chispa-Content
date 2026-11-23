@@ -15,7 +15,7 @@ execFileSync('node', ['scripts/sync.mjs'], {cwd: proj, stdio: 'inherit'});
 const spec = JSON.parse(fs.readFileSync(path.resolve(specArg), 'utf8'));
 if (typeof spec.voice.words === 'string') spec.words = JSON.parse(fs.readFileSync(path.join(proj, 'public', spec.voice.words), 'utf8'));
 const serveUrl = await bundle({entryPoint: path.join(proj, 'src/index.ts'), publicDir: path.join(proj, 'public')});
-const browser = await openBrowser('chrome');
+const browser = await openBrowser('chrome', {chromiumOptions: {gl: 'swangle'}});
 const composition = await selectComposition({serveUrl, id: 'Reel', inputProps: spec, puppeteerInstance: browser});
 const frames = framesArg.split(',').map(Number);
 const tmp = path.join(proj, 'out', 'stills');
@@ -23,7 +23,7 @@ fs.mkdirSync(tmp, {recursive: true});
 const files = [];
 for (const f of frames) {
   const o = path.join(tmp, `f${String(f).padStart(5, '0')}.png`);
-  await renderStill({composition, serveUrl, output: o, frame: f, inputProps: spec, scale, puppeteerInstance: browser});
+  await renderStill({composition, serveUrl, output: o, frame: f, inputProps: spec, scale, puppeteerInstance: browser, chromiumOptions: {gl: 'swangle'}});
   files.push(o);
 }
 await browser.close({silent: true});

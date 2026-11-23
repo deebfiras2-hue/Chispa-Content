@@ -1,0 +1,314 @@
+{
+ "id": "vorher-nachher-cafe",
+ "theme": "chispa",
+ "mode": "3d",
+ "voice": {
+  "src": "vorher-nachher-cafe/voice.mp3",
+  "words": "vorher-nachher-cafe/words.json"
+ },
+ "music": {
+  "src": "music/uplifting-1.mp3",
+  "speechDb": -20,
+  "gapDb": -15,
+  "tailDb": -12
+ },
+ "narration": {
+  "pos": "bottom",
+  "y": 1490,
+  "size": 54
+ },
+ "cover": {
+  "frame": 140
+ },
+ "scenes": [
+  {
+   "type": "3d-tiles",
+   "start": 0,
+   "title": "Ein Café-Profil.",
+   "titleY": 300,
+   "labels": [
+    {
+     "at": 0,
+     "text": "V O R H E R   /   N A C H H E R"
+    },
+    {
+     "at": "w5",
+     "text": "C A F É   M O R G E N R O T"
+    }
+   ],
+   "flipAt": "w4-0.1",
+   "step": 0.05,
+   "accentTile": 4,
+   "cam": [
+    {
+     "at": 0,
+     "dur": 0,
+     "dist": 14.5,
+     "az": -24,
+     "el": 10
+    },
+    {
+     "at": 0,
+     "dur": 4.5,
+     "dist": 12.5,
+     "az": -8,
+     "el": 4,
+     "ease": "out"
+    }
+   ],
+   "items": [
+    {
+     "type": "text",
+     "text": "BEISPIEL",
+     "font": "mono",
+     "size": 30,
+     "spacing": 6,
+     "box": true,
+     "x": 540,
+     "y": 520,
+     "width": 240,
+     "at": "w7",
+     "anim": "fade",
+     "dd": 0.3,
+     "sfx": "sfx/snap.mp3"
+    }
+   ]
+  },
+  {
+   "type": "3d-tiles",
+   "start": "w9",
+   "transition": "fade",
+   "title": "Café Morgenrot.",
+   "titleY": 300,
+   "labels": [
+    {
+     "at": 0,
+     "text": "V O R H E R"
+    },
+    {
+     "at": "w10",
+     "text": "J E D E S   B I L D   A N D E R S"
+    },
+    {
+     "at": "w17",
+     "text": "W O C H E N   A L T"
+    },
+    {
+     "at": "w22",
+     "text": "N A C H H E R"
+    },
+    {
+     "at": "w26",
+     "text": "E I N E   L I N I E"
+    }
+   ],
+   "flipAt": "w22",
+   "step": 0.16,
+   "accentTile": 4,
+   "order": "random",
+   "cam": [
+    {
+     "at": 0,
+     "dur": 0,
+     "dist": 12.0,
+     "az": 24,
+     "el": 12
+    },
+    {
+     "at": 0,
+     "dur": 6,
+     "dist": 11.2,
+     "az": 10,
+     "el": 6
+    },
+    {
+     "at": "w22",
+     "dur": 2.6,
+     "dist": 12.8,
+     "az": 0,
+     "el": 0
+    }
+   ],
+   "items": [
+    {
+     "type": "text",
+     "text": "BEISPIEL",
+     "font": "mono",
+     "size": 30,
+     "spacing": 6,
+     "box": true,
+     "x": 540,
+     "y": 520,
+     "width": 240,
+     "at": 0,
+     "anim": "fade",
+     "dd": 0.01
+    }
+   ]
+  },
+  {
+   "type": "3d-phone",
+   "start": "w33",
+   "transition": "fade",
+   "title": "So läuft das.",
+   "titleY": 300,
+   "labels": [
+    {
+     "at": 0.1,
+     "text": "B E I   U N S"
+    },
+    {
+     "at": "w39",
+     "text": "0 1   P A K E T   W Ä H L E N"
+    },
+    {
+     "at": "w43",
+     "text": "0 2   E I N   P A A R   F R A G E N"
+    },
+    {
+     "at": "w50",
+     "text": "0 3   A L L E S   F E R T I G"
+    }
+   ],
+   "screens": [
+    {
+     "at": 0,
+     "kind": "chat",
+     "name": "Chispa Studio",
+     "messages": [
+      {
+       "from": "me",
+       "text": "Hallo! Ich nehme das Paket Chispa.",
+       "at": "w40+0.2"
+      },
+      {
+       "from": "them",
+       "text": "Gern! Ein paar Fragen: Was macht dein Café aus?",
+       "at": "w44+0.3"
+      },
+      {
+       "from": "me",
+       "text": "Selbstgebackener Kuchen und ruhige Ecken.",
+       "at": "w47+0.2"
+      },
+      {
+       "from": "them",
+       "text": "Fertig: deine Posts, jeder mit Caption.",
+       "at": "w51+0.2"
+      }
+     ]
+    },
+    {
+     "at": "w55",
+     "kind": "feed",
+     "name": "cafe.morgenrot",
+     "tiles": "fresh",
+     "freshAt": "w55",
+     "step": 0.1,
+     "motifs": [
+      "cup",
+      "croissant",
+      "store",
+      "bean",
+      "text:Heute|frisch",
+      "cake",
+      "hours",
+      "cup",
+      "pin"
+     ]
+    }
+   ],
+   "phone": [
+    {
+     "at": 0,
+     "dur": 0,
+     "ry": 0.9,
+     "y": 0.0
+    },
+    {
+     "at": 0,
+     "dur": 1.4,
+     "ry": -0.18,
+     "ease": "out"
+    },
+    {
+     "at": "w55-0.3",
+     "dur": 0.7,
+     "ry": 0.15
+    }
+   ],
+   "cam": [
+    {
+     "at": 0,
+     "dur": 0,
+     "dist": 18
+    },
+    {
+     "at": "w40",
+     "dur": 1.2,
+     "dist": 12.5,
+     "ty": 0.6
+    },
+    {
+     "at": "w55-0.3",
+     "dur": 1.0,
+     "dist": 18,
+     "ty": 0
+    }
+   ],
+   "items": [
+    {
+     "type": "text",
+     "text": "BEISPIEL",
+     "font": "mono",
+     "size": 30,
+     "spacing": 6,
+     "box": true,
+     "x": 540,
+     "y": 520,
+     "width": 240,
+     "at": 0.2,
+     "anim": "fade",
+     "dd": 0.3
+    }
+   ]
+  },
+  {
+   "type": "kin-words",
+   "start": "w59",
+   "transition": "fade",
+   "bg": "petrol",
+   "meta": "CHISPA STUDIO",
+   "beats": [
+    {
+     "fromWord": 59,
+     "anim": "mask",
+     "stroke": "under",
+     "lines": [
+      {
+       "text": "Schreib uns",
+       "size": 240
+      },
+      {
+       "text": "auf WhatsApp.",
+       "size": 240,
+       "accent": [
+        "WhatsApp"
+       ],
+       "fromWord": 61
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "la-end",
+   "start": "w63",
+   "transition": "fade",
+   "signoff": "Content, der den Daumen stoppt.",
+   "fromWord": 63,
+   "outro": "Chispa!",
+   "outroWord": 68
+  }
+ ]
+}
