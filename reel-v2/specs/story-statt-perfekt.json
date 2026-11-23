@@ -1,0 +1,422 @@
+{
+ "id": "story-statt-perfekt",
+ "theme": "chispa",
+ "mode": "lineart",
+ "voice": {
+  "src": "story-statt-perfekt/voice.mp3",
+  "words": "story-statt-perfekt/words.json"
+ },
+ "music": {
+  "src": "music/curious-2.mp3",
+  "speechDb": -20,
+  "gapDb": -15,
+  "tailDb": -12
+ },
+ "narration": {
+  "pos": "bottom",
+  "y": 1470,
+  "size": 56
+ },
+ "cover": {
+  "frame": 200
+ },
+ "scenes": [
+  {
+   "type": "la-split",
+   "start": 0,
+   "bg": "warm",
+   "title": "Zwei Blumenläden.",
+   "labels": [
+    {
+     "at": 0.2,
+     "text": "G L E I C H E   S T R A S S E"
+    },
+    {
+     "at": "w2",
+     "text": "N R .  1   W A R T E T"
+    },
+    {
+     "at": "w12",
+     "text": "N R .  2   P O S T E T"
+    }
+   ],
+   "ground": 1150,
+   "items": [
+    {
+     "kind": "storefront",
+     "x": 290,
+     "y": 1150,
+     "s": 2.1,
+     "params": {
+      "text": "BLUMEN"
+     },
+     "at": 0.2,
+     "dd": 1.0,
+     "keys": [
+      {
+       "at": "w9",
+       "dur": 0.8,
+       "dim": 0.75
+      }
+     ]
+    },
+    {
+     "kind": "storefront",
+     "x": 790,
+     "y": 1150,
+     "s": 2.1,
+     "params": {
+      "text": "BLUMEN"
+     },
+     "at": "w1",
+     "dd": 1.0,
+     "keys": [
+      {
+       "at": "w19",
+       "dur": 0.6,
+       "lit": 1
+      }
+     ]
+    },
+    {
+     "kind": "calendar",
+     "x": 290,
+     "y": 630,
+     "s": 1.5,
+     "at": "w4",
+     "dd": 0.7
+    },
+    {
+     "type": "text",
+     "text": "1× IM MONAT",
+     "font": "mono",
+     "size": 30,
+     "spacing": 4,
+     "box": true,
+     "x": 290,
+     "y": 765,
+     "width": 360,
+     "at": "w9",
+     "anim": "fade",
+     "dd": 0.25,
+     "sfx": "sfx/snap.mp3"
+    },
+    {
+     "kind": "phone",
+     "x": 790,
+     "y": 660,
+     "s": 1.8,
+     "at": "w13",
+     "dd": 0.7,
+     "params": {
+      "screen": "lit"
+     }
+    },
+    {
+     "type": "text",
+     "text": "JEDEN MORGEN",
+     "font": "mono",
+     "size": 30,
+     "spacing": 4,
+     "box": true,
+     "x": 790,
+     "y": 765,
+     "width": 360,
+     "at": "w15",
+     "anim": "fade",
+     "dd": 0.25
+    }
+   ]
+  },
+  {
+   "type": "la-split",
+   "start": "w20",
+   "transition": "fade",
+   "bg": "warm",
+   "title": "Jeden Morgen.",
+   "label": "E I N E   K L E I N E   S T O R Y",
+   "ground": false,
+   "items": [
+    {
+     "kind": "phone",
+     "x": 190,
+     "y": 960,
+     "s": 3.2,
+     "at": 0.05,
+     "dd": 0.6,
+     "params": {
+      "screen": "post"
+     }
+    },
+    {
+     "type": "text",
+     "text": "TULPEN",
+     "font": "mono",
+     "size": 28,
+     "spacing": 3,
+     "box": true,
+     "x": 190,
+     "y": 1090,
+     "width": 300,
+     "at": 0.3,
+     "anim": "fade",
+     "dd": 0.25
+    },
+    {
+     "kind": "phone",
+     "x": 540,
+     "y": 960,
+     "s": 3.2,
+     "at": "w23",
+     "dd": 0.6,
+     "params": {
+      "screen": "post"
+     }
+    },
+    {
+     "type": "text",
+     "text": "STRAUSS",
+     "font": "mono",
+     "size": 28,
+     "spacing": 3,
+     "box": true,
+     "x": 540,
+     "y": 1090,
+     "width": 300,
+     "at": "w24",
+     "anim": "fade",
+     "dd": 0.25
+    },
+    {
+     "kind": "door",
+     "x": 890,
+     "y": 1010,
+     "s": 2.2,
+     "at": "w27",
+     "dd": 0.6,
+     "accent": true
+    },
+    {
+     "type": "text",
+     "text": "OFFENE TÜR",
+     "font": "mono",
+     "size": 28,
+     "spacing": 3,
+     "box": true,
+     "x": 890,
+     "y": 1090,
+     "width": 300,
+     "at": "w28",
+     "anim": "fade",
+     "dd": 0.25
+    }
+   ]
+  },
+  {
+   "type": "la-counter",
+   "start": "w30",
+   "transition": "fade",
+   "bg": "warm",
+   "title": "Eine Story.",
+   "label": "M I T   D E M   H A N D Y",
+   "value": 10,
+   "from": 0,
+   "at": "w30",
+   "countDur": 0.8,
+   "y": 850,
+   "caption": "SEKUNDEN"
+  },
+  {
+   "type": "la-split",
+   "start": "w35",
+   "transition": "fade",
+   "bg": "warm",
+   "title": "Wer fällt dir ein?",
+   "label": "W E N N   D U   B L U M E N   B R A U C H S T",
+   "ground": 1150,
+   "items": [
+    {
+     "kind": "storefront",
+     "x": 290,
+     "y": 1150,
+     "s": 2.1,
+     "params": {
+      "text": "BLUMEN"
+     },
+     "at": 0,
+     "dd": 0.6,
+     "sfx": false,
+     "keys": [
+      {
+       "at": "w40",
+       "dur": 0.8,
+       "dim": 0.75
+      }
+     ]
+    },
+    {
+     "kind": "storefront",
+     "x": 790,
+     "y": 1150,
+     "s": 2.1,
+     "params": {
+      "text": "BLUMEN"
+     },
+     "at": 0,
+     "dd": 0.6,
+     "sfx": false,
+     "keys": [
+      {
+       "at": "w41",
+       "dur": 0.6,
+       "lit": 1
+      }
+     ]
+    },
+    {
+     "kind": "question",
+     "x": 545,
+     "y": 860,
+     "s": 1.7,
+     "at": 0.3,
+     "dd": 0.6,
+     "out": "w41",
+     "sfx": "sfx/pop.mp3"
+    },
+    {
+     "kind": "woman",
+     "x": 540,
+     "y": 1150,
+     "s": 1.9,
+     "at": 0,
+     "dd": 0.5,
+     "sfx": false,
+     "params": {
+      "pose": "think"
+     },
+     "keys": [
+      {
+       "at": "w41+0.05",
+       "dur": 1.2,
+       "x": 860,
+       "walk": true
+      }
+     ],
+     "out": "w43",
+     "outDur": 0.3
+    }
+   ]
+  },
+  {
+   "type": "la-reveal",
+   "start": "w43",
+   "transition": "fade",
+   "lines": [
+    {
+     "text": "Lieber jeden Tag",
+     "fromWord": 43,
+     "accent": [
+      "Tag"
+     ],
+     "size": 140,
+     "y": 420
+    },
+    {
+     "text": "eine kleine Story",
+     "fromWord": 46,
+     "size": 140,
+     "y": 580
+    },
+    {
+     "text": "als einmal im Monat einen perfekten Post.",
+     "fromWord": 49,
+     "font": "text",
+     "size": 54,
+     "y": 760
+    }
+   ],
+   "items": [
+    {
+     "type": "line",
+     "from": [
+      150,
+      1200
+     ],
+     "to": 930,
+     "at": 0.2,
+     "dd": 0.7,
+     "sfx": false
+    },
+    {
+     "kind": "storefront",
+     "x": 540,
+     "y": 1200,
+     "s": 1.6,
+     "at": 0.3,
+     "dd": 1.0,
+     "params": {
+      "text": "BLUMEN"
+     }
+    }
+   ]
+  },
+  {
+   "type": "kin-words",
+   "start": "w56",
+   "transition": "fade",
+   "bg": "nebel",
+   "meta": "WEITERSAGEN",
+   "beats": [
+    {
+     "fromWord": 56,
+     "anim": "snap",
+     "stroke": "bar",
+     "lines": [
+      {
+       "text": "Schick das",
+       "size": 250
+      },
+      {
+       "text": "einem Laden,",
+       "size": 250,
+       "fromWord": 58
+      }
+     ]
+    },
+    {
+     "fromWord": 60,
+     "anim": "mask",
+     "stroke": "under",
+     "lines": [
+      {
+       "text": "der noch auf",
+       "size": 230
+      },
+      {
+       "text": "den perfekten",
+       "size": 230,
+       "fromWord": 63
+      },
+      {
+       "text": "Moment wartet.",
+       "size": 230,
+       "accent": [
+        "Moment"
+       ],
+       "fromWord": 65
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "la-end",
+   "start": "w67",
+   "transition": "fade",
+   "signoff": "Content, der den Daumen stoppt.",
+   "fromWord": 67,
+   "outro": "Chispa!",
+   "outroWord": 72
+  }
+ ]
+}
