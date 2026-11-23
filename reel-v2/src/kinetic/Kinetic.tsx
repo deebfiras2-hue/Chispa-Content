@@ -98,7 +98,7 @@ export const KinWords: React.FC<KinProps> = (p) => {
       op = clamp(q * 3);
       blur = (1 - clamp(q * 2)) * 14;
     } else if (anim === 'mask') {
-      tf = `translateY(${(1 - ease.out(q)) * 105}%)`;
+      tf = `translateY(${(1 - ease.out(q)) * 140}%)`;
     } else if (anim === 'slide') {
       tf = `translateX(${(1 - ease.out(q)) * (li % 2 ? 1100 : -1100)}px) skewX(${(1 - ease.out(q)) * -14}deg)`;
     } else {
@@ -110,7 +110,7 @@ export const KinWords: React.FC<KinProps> = (p) => {
     const ws = ln.text.split(' ');
     const acc = (w: string) => (ln.accent ?? []).some((a) => norm(a) === norm(w));
     els.push(
-      <div key={li} style={{position: 'absolute', left: 72, right: 72, top: y, height: h, overflow: anim === 'mask' || exit > 0 ? 'hidden' : 'visible', textAlign: align}}>
+      <div key={li} style={{position: 'absolute', left: 72, right: 72, top: y, height: h + size * 0.32 /* room for descenders (g, p) */, overflow: anim === 'mask' || exit > 0 ? 'hidden' : 'visible', textAlign: align}}>
         <div
           style={{
             fontFamily: fam,
@@ -156,7 +156,7 @@ export const KinWords: React.FC<KinProps> = (p) => {
   const sq = (a: number) => ease.inOut(clamp((t - a) / 0.45)) * (1 - exit);
   if (stroke === 'under' && strokeBox) {
     const sb = strokeBox as {x: number; y: number; w: number; h: number; at: number};
-    strokeEl = <div style={{position: 'absolute', left: sb.x, top: sb.y + sb.h * 0.98, height: 14, width: sb.w * sq(sb.at), background: th.accent}} />;
+    strokeEl = <div style={{position: 'absolute', left: sb.x, top: sb.y + sb.h * 1.24, height: 14, width: sb.w * sq(sb.at), background: th.accent}} />;
   } else if (stroke === 'strike' && strokeBox) {
     const sb = strokeBox as {x: number; y: number; w: number; h: number; at: number};
     strokeEl = <div style={{position: 'absolute', left: sb.x - 10, top: sb.y + sb.h * 0.5, height: 16, width: (sb.w + 20) * sq(sb.at), background: th.accent, transform: 'rotate(-4deg)'}} />;
