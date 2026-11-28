@@ -1,0 +1,305 @@
+{
+ "id": "geschenke-budget",
+ "theme": "chispa",
+ "mode": "lineart",
+ "voice": {
+  "src": "geschenke-budget/voice.mp3",
+  "words": "geschenke-budget/words.json"
+ },
+ "music": {
+  "src": "music/curious-2.mp3",
+  "speechDb": -20,
+  "gapDb": -15,
+  "tailDb": -12
+ },
+ "narration": {
+  "pos": "bottom",
+  "y": 1490,
+  "size": 54
+ },
+ "cover": {
+  "frame": 99
+ },
+ "scenes": [
+  {
+   "type": "la-split",
+   "start": 0,
+   "titleIn": 0,
+   "bg": "warm",
+   "title": "Ein Geschenk. 20 €.",
+   "labels": [
+    {
+     "at": 0.1,
+     "text": "E I N E   K U N D I N   S U C H T"
+    }
+   ],
+   "ground": 1150,
+   "items": [
+    {
+     "kind": "woman",
+     "x": 380,
+     "y": 1150,
+     "s": 2.1,
+     "at": 0.1,
+     "dd": 0.6,
+     "params": {
+      "pose": "think"
+     }
+    },
+    {
+     "kind": "priceTag",
+     "x": 720,
+     "y": 860,
+     "s": 3.0,
+     "at": "w5",
+     "dd": 0.6,
+     "accent": true,
+     "params": {
+      "text": "20 €"
+     }
+    }
+   ]
+  },
+  {
+   "type": "la-split",
+   "start": "w8",
+   "transition": "fade",
+   "bg": "warm",
+   "title": "Sie scrollt.",
+   "labels": [
+    {
+     "at": 0,
+     "text": "A U F   I N S T A G R A M"
+    },
+    {
+     "at": "w25",
+     "text": "S I E   G I B T   A U F"
+    }
+   ],
+   "ground": false,
+   "items": [
+    {
+     "kind": "phone",
+     "x": 540,
+     "y": 870,
+     "s": 5,
+     "at": 0.05,
+     "dd": 0.6
+    },
+    {
+     "type": "grid",
+     "x": 540,
+     "y": 882,
+     "w": 165,
+     "content": "full",
+     "stale": {
+      "at": "w25"
+     }
+    },
+    {
+     "type": "text",
+     "text": "KEIN PREIS",
+     "font": "mono",
+     "size": 30,
+     "spacing": 4,
+     "box": true,
+     "x": 300,
+     "y": 1250,
+     "width": 330,
+     "at": "w19",
+     "anim": "fade",
+     "dd": 0.25
+    },
+    {
+     "type": "text",
+     "text": "FÜR WEN?",
+     "font": "mono",
+     "size": 30,
+     "spacing": 4,
+     "box": true,
+     "x": 780,
+     "y": 1250,
+     "width": 300,
+     "at": "w22",
+     "anim": "fade",
+     "dd": 0.25
+    }
+   ]
+  },
+  {
+   "type": "la-split",
+   "start": "w28",
+   "transition": "fade",
+   "bg": "warm",
+   "title": "Mach es ihr leicht.",
+   "label": "E I N   P O S T   P R O   I D E E",
+   "ground": false,
+   "items": [
+    {
+     "kind": "priceTag",
+     "x": 300,
+     "y": 640,
+     "s": 2.4,
+     "at": "w34",
+     "dd": 0.6,
+     "accent": true,
+     "params": {
+      "text": "20 €"
+     }
+    },
+    {
+     "type": "text",
+     "text": "UNTER 20 €",
+     "font": "mono",
+     "size": 34,
+     "spacing": 4,
+     "box": true,
+     "x": 680,
+     "y": 640,
+     "width": 400,
+     "at": "w35",
+     "anim": "fade",
+     "dd": 0.25
+    },
+    {
+     "kind": "person",
+     "x": 300,
+     "y": 960,
+     "s": 1.5,
+     "at": "w38",
+     "dd": 0.6
+    },
+    {
+     "type": "text",
+     "text": "FÜR KINDER",
+     "font": "mono",
+     "size": 34,
+     "spacing": 4,
+     "box": true,
+     "x": 680,
+     "y": 900,
+     "width": 400,
+     "at": "w40",
+     "anim": "fade",
+     "dd": 0.25
+    },
+    {
+     "kind": "lightbulb",
+     "x": 300,
+     "y": 1170,
+     "s": 2.0,
+     "at": "w42",
+     "dd": 0.6
+    },
+    {
+     "type": "text",
+     "text": "HABEN SCHON ALLES",
+     "font": "mono",
+     "size": 34,
+     "spacing": 4,
+     "box": true,
+     "x": 680,
+     "y": 1170,
+     "width": 400,
+     "at": "w45",
+     "anim": "fade",
+     "dd": 0.25
+    }
+   ]
+  },
+  {
+   "type": "la-reveal",
+   "start": "w50",
+   "transition": "fade",
+   "lines": [
+    {
+     "text": "Ein Foto.",
+     "fromWord": 50,
+     "size": 150,
+     "y": 420
+    },
+    {
+     "text": "Ein Preis.",
+     "fromWord": 52,
+     "size": 150,
+     "y": 590,
+     "accent": [
+      "Preis."
+     ]
+    },
+    {
+     "text": "Fertig.",
+     "fromWord": 54,
+     "size": 150,
+     "y": 760
+    }
+   ],
+   "items": [
+    {
+     "type": "line",
+     "from": [
+      150,
+      1200
+     ],
+     "to": 930,
+     "at": 0.2,
+     "dd": 0.7,
+     "sfx": false
+    },
+    {
+     "kind": "storefront",
+     "x": 540,
+     "y": 1200,
+     "s": 1.6,
+     "at": 0.3,
+     "dd": 1.0,
+     "params": {
+      "text": "LADEN"
+     }
+    }
+   ]
+  },
+  {
+   "type": "kin-words",
+   "start": "w55",
+   "transition": "fade",
+   "bg": "nebel",
+   "meta": "SPEICHERN",
+   "beats": [
+    {
+     "fromWord": 55,
+     "anim": "snap",
+     "stroke": "under",
+     "lines": [
+      {
+       "text": "Speicher dir",
+       "size": 250
+      },
+      {
+       "text": "das für",
+       "size": 250,
+       "fromWord": 57
+      },
+      {
+       "text": "deinen Laden.",
+       "size": 270,
+       "accent": [
+        "Laden."
+       ],
+       "fromWord": 59
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "la-end",
+   "start": "w61",
+   "transition": "fade",
+   "signoff": "Content, der den Daumen stoppt.",
+   "fromWord": 61,
+   "outro": "Chispa!",
+   "outroWord": 66
+  }
+ ]
+}
