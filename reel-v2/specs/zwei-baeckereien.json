@@ -1,0 +1,368 @@
+{
+ "id": "zwei-baeckereien",
+ "theme": "chispa",
+ "mode": "lineart",
+ "voice": {
+  "src": "zwei-baeckereien/voice.mp3",
+  "words": "zwei-baeckereien/words.json"
+ },
+ "music": {
+  "src": "music/curious-1.mp3",
+  "speechDb": -20,
+  "gapDb": -15,
+  "tailDb": -12
+ },
+ "narration": {
+  "pos": "bottom",
+  "y": 1490,
+  "size": 54
+ },
+ "cover": {
+  "frame": 75
+ },
+ "scenes": [
+  {
+   "type": "la-split",
+   "start": 0,
+   "titleIn": 0,
+   "bg": "warm",
+   "title": "Zwei Bäckereien.",
+   "labels": [
+    {
+     "at": 0.2,
+     "text": "B E I D E   H A B E N   S T O L L E N"
+    },
+    {
+     "at": "w7",
+     "text": "N R .   1   W A R T E T"
+    },
+    {
+     "at": "w15",
+     "text": "N R .   2   S A G T   E S"
+    }
+   ],
+   "ground": 1150,
+   "items": [
+    {
+     "kind": "storefront",
+     "x": 290,
+     "y": 1150,
+     "s": 2.1,
+     "params": {
+      "text": "BÄCKEREI"
+     },
+     "at": 0.15,
+     "dd": 0.9,
+     "keys": [
+      {
+       "at": "w13",
+       "dur": 0.8,
+       "dim": 0.75
+      }
+     ]
+    },
+    {
+     "kind": "storefront",
+     "x": 790,
+     "y": 1150,
+     "s": 2.1,
+     "params": {
+      "text": "BÄCKEREI"
+     },
+     "at": 0.5,
+     "dd": 0.9,
+     "keys": [
+      {
+       "at": "w23",
+       "dur": 0.6,
+       "lit": 1
+      }
+     ]
+    },
+    {
+     "kind": "bread",
+     "x": 290,
+     "y": 640,
+     "s": 1.6,
+     "at": "w9",
+     "dd": 0.6
+    },
+    {
+     "type": "text",
+     "text": "IM REGAL",
+     "font": "mono",
+     "size": 30,
+     "spacing": 4,
+     "box": true,
+     "x": 290,
+     "y": 765,
+     "width": 360,
+     "at": "w11",
+     "anim": "fade",
+     "dd": 0.25
+    },
+    {
+     "kind": "phone",
+     "x": 790,
+     "y": 640,
+     "s": 1.8,
+     "at": "w17",
+     "dd": 0.6,
+     "params": {
+      "screen": "post"
+     }
+    },
+    {
+     "type": "text",
+     "text": "AB HEUTE DA!",
+     "font": "mono",
+     "size": 30,
+     "spacing": 4,
+     "box": true,
+     "x": 790,
+     "y": 765,
+     "width": 380,
+     "at": "w23",
+     "anim": "fade",
+     "dd": 0.25,
+     "color": "accent"
+    }
+   ]
+  },
+  {
+   "type": "la-split",
+   "start": "w26",
+   "transition": "fade",
+   "bg": "warm",
+   "title": "Morgens am Handy.",
+   "label": "D I E   K U N D I N",
+   "ground": 1150,
+   "items": [
+    {
+     "kind": "woman",
+     "x": 420,
+     "y": 1150,
+     "s": 2.0,
+     "at": 0.05,
+     "dd": 0.5,
+     "params": {
+      "pose": "phone"
+     }
+    },
+    {
+     "kind": "phone",
+     "x": 700,
+     "y": 760,
+     "s": 2.6,
+     "at": "w29",
+     "dd": 0.5,
+     "params": {
+      "screen": "post"
+     }
+    },
+    {
+     "type": "text",
+     "text": "AB HEUTE DA!",
+     "font": "mono",
+     "size": 30,
+     "spacing": 4,
+     "box": true,
+     "x": 700,
+     "y": 940,
+     "width": 380,
+     "at": "w30",
+     "anim": "fade",
+     "dd": 0.25,
+     "color": "accent"
+    }
+   ]
+  },
+  {
+   "type": "la-split",
+   "start": "w34",
+   "transition": "fade",
+   "bg": "warm",
+   "title": "Wo holt sie ihn?",
+   "label": "I H R E N   S T O L L E N",
+   "ground": 1150,
+   "items": [
+    {
+     "kind": "storefront",
+     "x": 290,
+     "y": 1150,
+     "s": 2.1,
+     "params": {
+      "text": "BÄCKEREI"
+     },
+     "at": 0,
+     "dd": 0.5,
+     "sfx": false,
+     "keys": [
+      {
+       "at": "w36",
+       "dur": 0.8,
+       "dim": 0.75
+      }
+     ]
+    },
+    {
+     "kind": "storefront",
+     "x": 790,
+     "y": 1150,
+     "s": 2.1,
+     "params": {
+      "text": "BÄCKEREI"
+     },
+     "at": 0,
+     "dd": 0.5,
+     "sfx": false,
+     "keys": [
+      {
+       "at": "w37",
+       "dur": 0.6,
+       "lit": 1
+      }
+     ]
+    },
+    {
+     "kind": "question",
+     "x": 545,
+     "y": 860,
+     "s": 1.6,
+     "at": 0.25,
+     "dd": 0.5,
+     "out": "w37",
+     "sfx": "sfx/pop.mp3"
+    },
+    {
+     "kind": "woman",
+     "x": 540,
+     "y": 1150,
+     "s": 1.9,
+     "at": 0,
+     "dd": 0.4,
+     "sfx": false,
+     "params": {
+      "pose": "think"
+     },
+     "keys": [
+      {
+       "at": "w37",
+       "dur": 1.1,
+       "x": 840,
+       "walk": true
+      }
+     ],
+     "out": "w39",
+     "outDur": 0.3
+    }
+   ]
+  },
+  {
+   "type": "la-reveal",
+   "start": "w39",
+   "transition": "fade",
+   "lines": [
+    {
+     "text": "Neues im Regal?",
+     "fromWord": 39,
+     "size": 120,
+     "y": 400
+    },
+    {
+     "text": "Sag es am ersten Tag.",
+     "fromWord": 42,
+     "accent": [
+      "Tag."
+     ],
+     "size": 105,
+     "y": 560
+    },
+    {
+     "text": "Mit Foto, nicht nur im Schaufenster.",
+     "fromWord": 47,
+     "font": "text",
+     "size": 52,
+     "y": 760
+    }
+   ],
+   "items": [
+    {
+     "type": "line",
+     "from": [
+      150,
+      1200
+     ],
+     "to": 930,
+     "at": 0.2,
+     "dd": 0.7,
+     "sfx": false
+    },
+    {
+     "kind": "storefront",
+     "x": 540,
+     "y": 1200,
+     "s": 1.6,
+     "at": 0.3,
+     "dd": 1.0,
+     "params": {
+      "text": "BÄCKEREI"
+     }
+    }
+   ]
+  },
+  {
+   "type": "kin-words",
+   "start": "w53",
+   "transition": "fade",
+   "bg": "nebel",
+   "meta": "WEITERSAGEN",
+   "beats": [
+    {
+     "fromWord": 53,
+     "anim": "snap",
+     "stroke": "bar",
+     "lines": [
+      {
+       "text": "Schick das",
+       "size": 250
+      },
+      {
+       "text": "einer Bäckerei,",
+       "size": 250,
+       "fromWord": 55
+      }
+     ]
+    },
+    {
+     "fromWord": 57,
+     "anim": "mask",
+     "stroke": "under",
+     "lines": [
+      {
+       "text": "die gerade",
+       "size": 250
+      },
+      {
+       "text": "Stollen backt.",
+       "size": 270,
+       "accent": [
+        "Stollen"
+       ],
+       "fromWord": 59
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "la-end",
+   "start": "w61",
+   "transition": "fade",
+   "signoff": "Content, der den Daumen stoppt.",
+   "fromWord": 61,
+   "outro": "Chispa!",
+   "outroWord": 66
+  }
+ ]
+}
