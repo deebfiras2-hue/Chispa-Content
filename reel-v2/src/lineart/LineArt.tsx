@@ -529,6 +529,8 @@ export type LAProps = {
   title?: string;
   titleY?: number;
   titleSize?: number;
+  /** 0 = title fully visible from the scene's first frame (hook on frame 0) */
+  titleIn?: number;
   label?: string;
   labels?: Label[];
   labelY?: number;
@@ -549,7 +551,7 @@ const Header: React.FC<{p: LAProps; c: Ctx}> = ({p, c}) => {
   const size = p.titleSize ?? th.titleSize;
   if (p.title) {
     const same = p.prev?.title === p.title;
-    const q = same ? 1 : smooth((t - 0.05) / 0.55);
+    const q = same || p.titleIn === 0 ? 1 : smooth((t - 0.05) / 0.55);
     const txt = th.titleUpper ? p.title.toUpperCase() : p.title;
     els.push(
       <div
