@@ -1,0 +1,334 @@
+{
+ "id": "gutschein-zeigen",
+ "theme": "chispa",
+ "mode": "3d",
+ "voice": {
+  "src": "gutschein-zeigen/voice.mp3",
+  "words": "gutschein-zeigen/words.json"
+ },
+ "music": {
+  "src": "music/uplifting-1.mp3",
+  "speechDb": -20,
+  "gapDb": -15,
+  "tailDb": -12
+ },
+ "narration": {
+  "pos": "bottom",
+  "y": 1490,
+  "size": 54
+ },
+ "cover": {
+  "frame": 60
+ },
+ "scenes": [
+  {
+   "type": "3d-store",
+   "start": 0,
+   "titleIn": 0,
+   "title": "Du verkaufst Gutscheine?",
+   "titleY": 330,
+   "titleSize": 124,
+   "labels": [
+    {
+     "at": "w3",
+     "text": "W E I S S   D A S   J E M A N D ?"
+    }
+   ],
+   "sign": "BARBIER",
+   "neighbors": [
+    "BÄCKEREI",
+    "CAFÉ",
+    "LADEN"
+   ],
+   "walkers": [
+    {
+     "at": -1,
+     "from": -8,
+     "to": 8,
+     "dur": 9,
+     "z": 1.5
+    },
+    {
+     "at": 0.6,
+     "from": 8,
+     "to": -8,
+     "dur": 8,
+     "z": 1.0
+    }
+   ],
+   "cam": [
+    {
+     "at": 0,
+     "dur": 0,
+     "dist": 20,
+     "az": 16,
+     "el": 8,
+     "ty": 2.8
+    },
+    {
+     "at": 0,
+     "dur": 7,
+     "dist": 15,
+     "az": -6,
+     "el": 5,
+     "ty": 2.4
+    }
+   ]
+  },
+  {
+   "type": "3d-tags",
+   "start": "w7",
+   "transition": "fade",
+   "title": "Im Dezember.",
+   "titleY": 300,
+   "titleSize": 130,
+   "labels": [
+    {
+     "at": 0,
+     "text": "G E S C H E N K E"
+    },
+    {
+     "at": "w13",
+     "text": "W I E   E I N   P R O D U K T"
+    }
+   ],
+   "tags": [
+    {
+     "kind": "tag",
+     "at": "w15",
+     "x": 0,
+     "text": "25 €",
+     "sub": "GUTSCHEIN · BEISPIEL",
+     "accent": true
+    }
+   ],
+   "cam": [
+    {
+     "at": 0,
+     "dur": 0,
+     "dist": 15,
+     "az": -10,
+     "el": 12,
+     "ty": -1.2
+    },
+    {
+     "at": 0,
+     "dur": 6,
+     "dist": 12.5,
+     "az": 6,
+     "el": 8,
+     "ty": -1.2
+    }
+   ]
+  },
+  {
+   "type": "3d-phone",
+   "start": "w20",
+   "transition": "fade",
+   "title": "Drei Dinge.",
+   "titleY": 300,
+   "labels": [
+    {
+     "at": 0,
+     "text": "0 1   E C H T E S   F O T O"
+    },
+    {
+     "at": "w26",
+     "text": "0 2   W A S   D R A U F   I S T"
+    },
+    {
+     "at": "w37",
+     "text": "0 3   W O   E S   I H N   G I B T"
+    }
+   ],
+   "screens": [
+    {
+     "at": 0,
+     "kind": "post",
+     "name": "barbier.beispiel",
+     "motif": "text:Gutschein|Barbier",
+     "caption": "Unser Gutschein. Liegt an der Kasse."
+    },
+    {
+     "at": "w30",
+     "kind": "post",
+     "name": "barbier.beispiel",
+     "motif": "text:Haarschnitt|oder Betrag",
+     "caption": "Haarschnitt, Bartpflege oder ein Betrag."
+    },
+    {
+     "at": "w41",
+     "kind": "chat",
+     "name": "barbier.beispiel",
+     "messages": [
+      {
+       "from": "them",
+       "text": "Hast du noch einen Gutschein?",
+       "at": "w41+0.1"
+      },
+      {
+       "from": "me",
+       "text": "Klar! Im Laden oder hier per Nachricht.",
+       "at": "w43+0.2"
+      }
+     ]
+    }
+   ],
+   "phone": [
+    {
+     "at": 0,
+     "dur": 0,
+     "ry": 0.9
+    },
+    {
+     "at": 0,
+     "dur": 1.3,
+     "ry": -0.16,
+     "ease": "out"
+    },
+    {
+     "at": "w30-0.2",
+     "dur": 0.6,
+     "ry": 0.12
+    },
+    {
+     "at": "w41-0.2",
+     "dur": 0.6,
+     "ry": -0.1
+    }
+   ],
+   "cam": [
+    {
+     "at": 0,
+     "dur": 0,
+     "dist": 17
+    },
+    {
+     "at": "w22",
+     "dur": 1.2,
+     "dist": 12,
+     "ty": 0.5
+    },
+    {
+     "at": "w41",
+     "dur": 1.0,
+     "dist": 12.5,
+     "ty": 0.2
+    }
+   ],
+   "items": [
+    {
+     "type": "text",
+     "text": "BEISPIEL",
+     "font": "mono",
+     "size": 30,
+     "spacing": 4,
+     "box": true,
+     "x": 880,
+     "y": 560,
+     "width": 240,
+     "at": 0.2,
+     "anim": "fade",
+     "dd": 0.25
+    }
+   ]
+  },
+  {
+   "type": "3d-text",
+   "start": "w47",
+   "transition": "fade",
+   "narration": false,
+   "lines": [
+    {
+     "text": "Ein Post.",
+     "fromWord": 47,
+     "size": 0.6,
+     "y": 1.0
+    },
+    {
+     "text": "Eine Story.",
+     "fromWord": 49,
+     "size": 0.6,
+     "y": 0.0
+    },
+    {
+     "text": "Oben anpinnen.",
+     "fromWord": 53,
+     "size": 0.6,
+     "y": -1.0,
+     "accent": true
+    }
+   ],
+   "cam": [
+    {
+     "at": 0,
+     "dur": 0,
+     "dist": 12
+    },
+    {
+     "at": 0,
+     "dur": 3,
+     "dist": 10.5
+    }
+   ]
+  },
+  {
+   "type": "kin-words",
+   "start": "w56",
+   "transition": "fade",
+   "bg": "nebel",
+   "meta": "WEITERSAGEN",
+   "beats": [
+    {
+     "fromWord": 56,
+     "anim": "snap",
+     "stroke": "bar",
+     "lines": [
+      {
+       "text": "Schick das",
+       "size": 250
+      },
+      {
+       "text": "einem Barbier,",
+       "size": 250,
+       "fromWord": 58
+      }
+     ]
+    },
+    {
+     "fromWord": 60,
+     "anim": "mask",
+     "stroke": "bar",
+     "lines": [
+      {
+       "text": "der Gutscheine",
+       "size": 230
+      },
+      {
+       "text": "an der Kasse",
+       "size": 260,
+       "accent": [
+        "Kasse"
+       ],
+       "fromWord": 62
+      },
+      {
+       "text": "liegen hat.",
+       "size": 230,
+       "fromWord": 65
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "la-end",
+   "start": "w67",
+   "transition": "fade",
+   "signoff": "Content, der den Daumen stoppt.",
+   "fromWord": 67,
+   "outro": "Chispa!",
+   "outroWord": 72
+  }
+ ]
+}

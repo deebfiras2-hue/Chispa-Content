@@ -145,6 +145,141 @@
           "caption_file": "reels/2026-11-30-ein-angebot/caption.txt"
         }
       ]
+    },
+    {
+      "date": "2026-12-01",
+      "items": [
+        {
+          "id": "2026-12-01-carousel",
+          "type": "carousel",
+          "time": "12:00",
+          "title": "Dein Dezember in 7 Posts",
+          "images": [
+            "posts/2026-12-01-dezember-7-posts/1.jpg",
+            "posts/2026-12-01-dezember-7-posts/2.jpg",
+            "posts/2026-12-01-dezember-7-posts/3.jpg",
+            "posts/2026-12-01-dezember-7-posts/4.jpg",
+            "posts/2026-12-01-dezember-7-posts/5.jpg",
+            "posts/2026-12-01-dezember-7-posts/6.jpg",
+            "posts/2026-12-01-dezember-7-posts/7.jpg",
+            "posts/2026-12-01-dezember-7-posts/8.jpg",
+            "posts/2026-12-01-dezember-7-posts/9.jpg"
+          ],
+          "caption_file": "posts/2026-12-01-dezember-7-posts/caption.txt"
+        },
+        {
+          "id": "2026-12-01-reel",
+          "type": "reel",
+          "time": "19:00",
+          "title": "Zwei Bäckereien",
+          "video": "reels/2026-12-01-zwei-baeckereien/reel.mp4",
+          "cover": "reels/2026-12-01-zwei-baeckereien/cover.jpg",
+          "caption_file": "reels/2026-12-01-zwei-baeckereien/caption.txt"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-02",
+      "items": [
+        {
+          "id": "2026-12-02-reel",
+          "type": "reel",
+          "time": "19:00",
+          "title": "Du verkaufst Gutscheine?",
+          "video": "reels/2026-12-02-gutschein-zeigen/reel.mp4",
+          "cover": "reels/2026-12-02-gutschein-zeigen/cover.jpg",
+          "caption_file": "reels/2026-12-02-gutschein-zeigen/caption.txt"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-03",
+      "items": [
+        {
+          "id": "2026-12-03-carousel",
+          "type": "carousel",
+          "time": "12:00",
+          "title": "Die Caption in 3 Sätzen",
+          "images": [
+            "posts/2026-12-03-3-satz-caption/1.jpg",
+            "posts/2026-12-03-3-satz-caption/2.jpg",
+            "posts/2026-12-03-3-satz-caption/3.jpg",
+            "posts/2026-12-03-3-satz-caption/4.jpg",
+            "posts/2026-12-03-3-satz-caption/5.jpg",
+            "posts/2026-12-03-3-satz-caption/6.jpg",
+            "posts/2026-12-03-3-satz-caption/7.jpg"
+          ],
+          "caption_file": "posts/2026-12-03-3-satz-caption/caption.txt"
+        },
+        {
+          "id": "2026-12-03-reel",
+          "type": "reel",
+          "time": "19:00",
+          "title": "24. Dezember. Hast du offen?",
+          "video": "reels/2026-12-03-feiertage-offen/reel.mp4",
+          "cover": "reels/2026-12-03-feiertage-offen/cover.jpg",
+          "caption_file": "reels/2026-12-03-feiertage-offen/caption.txt"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-04",
+      "items": [
+        {
+          "id": "2026-12-04-reel",
+          "type": "reel",
+          "time": "19:00",
+          "title": "Sprachnachricht rein. Post raus. (Beispiel)",
+          "video": "reels/2026-12-04-sprachnachricht-post/reel.mp4",
+          "cover": "reels/2026-12-04-sprachnachricht-post/cover.jpg",
+          "caption_file": "reels/2026-12-04-sprachnachricht-post/caption.txt"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-05",
+      "items": [
+        {
+          "id": "2026-12-05-reel",
+          "type": "reel",
+          "time": "19:00",
+          "title": "Geschenke nach Budget",
+          "video": "reels/2026-12-05-geschenke-budget/reel.mp4",
+          "cover": "reels/2026-12-05-geschenke-budget/cover.jpg",
+          "caption_file": "reels/2026-12-05-geschenke-budget/caption.txt"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-06",
+      "items": [
+        {
+          "id": "2026-12-06-carousel",
+          "type": "carousel",
+          "time": "12:00",
+          "title": "Ein Dezember für eine Bäckerei (Beispiel)",
+          "images": [
+            "posts/2026-12-06-beispiel-baeckerei/1.jpg",
+            "posts/2026-12-06-beispiel-baeckerei/2.jpg",
+            "posts/2026-12-06-beispiel-baeckerei/3.jpg",
+            "posts/2026-12-06-beispiel-baeckerei/4.jpg",
+            "posts/2026-12-06-beispiel-baeckerei/5.jpg",
+            "posts/2026-12-06-beispiel-baeckerei/6.jpg",
+            "posts/2026-12-06-beispiel-baeckerei/7.jpg",
+            "posts/2026-12-06-beispiel-baeckerei/8.jpg"
+          ],
+          "caption_file": "posts/2026-12-06-beispiel-baeckerei/caption.txt"
+        },
+        {
+          "id": "2026-12-06-reel",
+          "type": "reel",
+          "time": "19:00",
+          "title": "Ab Januar mach ich das",
+          "video": "reels/2026-12-06-ab-januar/reel.mp4",
+          "cover": "reels/2026-12-06-ab-januar/cover.jpg",
+          "caption_file": "reels/2026-12-06-ab-januar/caption.txt"
+        }
+      ]
     }
   ]
 }

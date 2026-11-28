@@ -1,0 +1,265 @@
+{
+ "id": "ab-januar",
+ "theme": "chispa",
+ "mode": "kinetic",
+ "voice": {
+  "src": "ab-januar/voice.mp3",
+  "words": "ab-januar/words.json"
+ },
+ "music": {
+  "src": "music/uplifting-1.mp3",
+  "speechDb": -20,
+  "gapDb": -15,
+  "tailDb": -12
+ },
+ "narration": {
+  "pos": "bottom",
+  "y": 1490,
+  "size": 54
+ },
+ "cover": {
+  "frame": 30
+ },
+ "scenes": [
+  {
+   "type": "kin-words",
+   "start": 0,
+   "bg": "nebel",
+   "meta": "JEDES JAHR",
+   "beats": [
+    {
+     "at": -0.8,
+     "anim": "snap",
+     "stroke": "bar",
+     "lines": [
+      {
+       "text": "„Ab Januar",
+       "size": 300,
+       "accent": [
+        "Januar"
+       ],
+       "at": -0.8
+      },
+      {
+       "text": "mach ich das",
+       "size": 230,
+       "at": -0.7
+      },
+      {
+       "text": "mit Instagram.“",
+       "size": 230,
+       "at": -0.6
+      }
+     ]
+    },
+    {
+     "fromWord": 9,
+     "anim": "mask",
+     "stroke": "under",
+     "lines": [
+      {
+       "text": "Kennst du?",
+       "size": 200,
+       "color": "muted"
+      },
+      {
+       "text": "Jedes Jahr.",
+       "size": 300,
+       "accent": [
+        "Jahr."
+       ]
+      }
+     ]
+    },
+    {
+     "fromWord": 13,
+     "anim": "slide",
+     "stroke": "strike",
+     "bg": "tinte",
+     "lines": [
+      {
+       "text": "Im Januar",
+       "size": 260
+      },
+      {
+       "text": "wieder keine",
+       "size": 240,
+       "fromWord": 17
+      },
+      {
+       "text": "Zeit.",
+       "size": 320,
+       "accent": [
+        "Zeit."
+       ],
+       "fromWord": 19
+      }
+     ]
+    },
+    {
+     "fromWord": 20,
+     "anim": "snap",
+     "stroke": "under",
+     "bg": "petrol",
+     "lines": [
+      {
+       "text": "Lass dir",
+       "size": 240
+      },
+      {
+       "text": "deinen Januar",
+       "size": 240,
+       "fromWord": 23
+      },
+      {
+       "text": "fertig machen.",
+       "size": 260,
+       "accent": [
+        "fertig"
+       ],
+       "fromWord": 25
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "3d-tags",
+   "start": "w27",
+   "transition": "fade",
+   "title": "Prueba oder Chispa.",
+   "titleY": 300,
+   "titleSize": 124,
+   "labels": [
+    {
+     "at": 0,
+     "text": "Z U M   A U S P R O B I E R E N"
+    },
+    {
+     "at": "w39",
+     "text": "U N S E R E   E M P F E H L U N G"
+    }
+   ],
+   "tags": [
+    {
+     "kind": "tag",
+     "at": "w30",
+     "x": -1.05,
+     "text": "149 €",
+     "sub": "PRUEBA · EINMAL"
+    },
+    {
+     "kind": "tag",
+     "at": "w43",
+     "x": 1.05,
+     "text": "699 €",
+     "sub": "CHISPA · EINMAL",
+     "accent": true
+    }
+   ],
+   "cam": [
+    {
+     "at": 0,
+     "dur": 0,
+     "dist": 17,
+     "az": -10,
+     "el": 14,
+     "ty": -1.35
+    },
+    {
+     "at": 0,
+     "dur": 12,
+     "dist": 15,
+     "az": 6,
+     "el": 10,
+     "ty": -1.3
+    }
+   ],
+   "items": [
+    {
+     "type": "text",
+     "text": "5 POSTS · 5 STORIES · 1 REEL",
+     "font": "mono",
+     "size": 21,
+     "spacing": 1,
+     "box": true,
+     "x": 300,
+     "y": 1200,
+     "width": 500,
+     "at": "w30",
+     "anim": "fade",
+     "dd": 0.25
+    },
+    {
+     "type": "text",
+     "text": "20 POSTS · 20 STORIES · 3 REELS",
+     "font": "mono",
+     "size": 21,
+     "spacing": 1,
+     "box": true,
+     "x": 790,
+     "y": 1200,
+     "width": 500,
+     "at": "w43",
+     "anim": "fade",
+     "dd": 0.25
+    }
+   ]
+  },
+  {
+   "type": "kin-words",
+   "start": "w52",
+   "transition": "fade",
+   "bg": "petrol",
+   "meta": "CHISPA STUDIO",
+   "beats": [
+    {
+     "fromWord": 52,
+     "anim": "snap",
+     "stroke": "under",
+     "lines": [
+      {
+       "text": "Einmal zahlen.",
+       "size": 240
+      },
+      {
+       "text": "Kein Abo.",
+       "size": 300,
+       "accent": [
+        "Abo."
+       ]
+      }
+     ]
+    },
+    {
+     "fromWord": 54,
+     "anim": "mask",
+     "stroke": "bar",
+     "lines": [
+      {
+       "text": "Schreib uns",
+       "size": 250
+      },
+      {
+       "text": "auf WhatsApp.",
+       "size": 250,
+       "accent": [
+        "WhatsApp."
+       ],
+       "fromWord": 56
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "la-end",
+   "start": "w58",
+   "transition": "fade",
+   "signoff": "Content, der den Daumen stoppt.",
+   "fromWord": 58,
+   "outro": "Chispa!",
+   "outroWord": 63
+  }
+ ]
+}

@@ -1,0 +1,5 @@
+NEIN
+
+# 2026-12-06 · Karussell 12:00 · Ein Dezember für eine Bäckerei (Beispiel) · Bilder: posts/2026-12-06-beispiel-baeckerei/ · Caption: posts/2026-12-06-beispiel-baeckerei/caption.txt
+# 2026-12-06 · Reel 19:00 · Ab Januar mach ich das · Video: reels/2026-12-06-ab-januar/reel.mp4 · Caption: reels/2026-12-06-ab-januar/caption.txt
+# Zum Freigeben die erste Zeile auf JA ändern. Änderungswünsche unten drunter schreiben.

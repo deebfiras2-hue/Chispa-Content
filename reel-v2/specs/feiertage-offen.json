@@ -1,0 +1,247 @@
+{
+ "id": "feiertage-offen",
+ "theme": "chispa",
+ "mode": "kinetic",
+ "voice": {
+  "src": "feiertage-offen/voice.mp3",
+  "words": "feiertage-offen/words.json"
+ },
+ "music": {
+  "src": "music/upbeat-1.mp3",
+  "speechDb": -20,
+  "gapDb": -15,
+  "tailDb": -12
+ },
+ "narration": {
+  "pos": "bottom",
+  "y": 1490,
+  "size": 54
+ },
+ "cover": {
+  "frame": 20
+ },
+ "scenes": [
+  {
+   "type": "kin-words",
+   "start": 0,
+   "bg": "nebel",
+   "meta": "CAFÉ · FEIERTAGE",
+   "beats": [
+    {
+     "at": -0.8,
+     "anim": "snap",
+     "stroke": "under",
+     "lines": [
+      {
+       "text": "24. Dezember.",
+       "size": 300,
+       "accent": [
+        "24."
+       ],
+       "at": -0.8
+      },
+      {
+       "text": "Hast du offen?",
+       "size": 240,
+       "at": -0.7
+      }
+     ]
+    },
+    {
+     "fromWord": 5,
+     "anim": "mask",
+     "stroke": "bar",
+     "lines": [
+      {
+       "text": "Deine Kunden",
+       "size": 240
+      },
+      {
+       "text": "wollen das wissen.",
+       "size": 240,
+       "fromWord": 7
+      }
+     ]
+    },
+    {
+     "fromWord": 10,
+     "anim": "slide",
+     "stroke": "under",
+     "bg": "petrol",
+     "lines": [
+      {
+       "text": "Ein Post",
+       "size": 300
+      },
+      {
+       "text": "mit deinen",
+       "size": 220,
+       "fromWord": 13
+      },
+      {
+       "text": "Feiertagszeiten.",
+       "size": 240,
+       "accent": [
+        "Feiertagszeiten."
+       ],
+       "fromWord": 15
+      }
+     ]
+    },
+    {
+     "fromWord": 16,
+     "anim": "stack",
+     "stroke": "bar",
+     "lines": [
+      {
+       "text": "Heiligabend.",
+       "size": 200
+      },
+      {
+       "text": "Die Feiertage.",
+       "size": 200,
+       "fromWord": 17
+      },
+      {
+       "text": "Zwischen den Jahren.",
+       "size": 200,
+       "fromWord": 19
+      },
+      {
+       "text": "Silvester.",
+       "size": 200,
+       "fromWord": 22
+      }
+     ]
+    },
+    {
+     "fromWord": 23,
+     "anim": "snap",
+     "stroke": "circle",
+     "bg": "nebel",
+     "lines": [
+      {
+       "text": "Pinn ihn",
+       "size": 300
+      },
+      {
+       "text": "oben an.",
+       "size": 300,
+       "accent": [
+        "oben"
+       ],
+       "fromWord": 25
+      }
+     ]
+    },
+    {
+     "fromWord": 27,
+     "anim": "mask",
+     "stroke": "under",
+     "lines": [
+      {
+       "text": "Und trag sie",
+       "size": 220
+      },
+      {
+       "text": "bei Google",
+       "size": 300,
+       "accent": [
+        "Google"
+       ],
+       "fromWord": 32
+      },
+      {
+       "text": "ein.",
+       "size": 220,
+       "fromWord": 34
+      }
+     ]
+    },
+    {
+     "fromWord": 35,
+     "anim": "slide",
+     "stroke": "strike",
+     "bg": "tinte",
+     "lines": [
+      {
+       "text": "Nicht jedem",
+       "size": 240
+      },
+      {
+       "text": "einzeln am",
+       "size": 240,
+       "fromWord": 41
+      },
+      {
+       "text": "Telefon.",
+       "size": 300,
+       "accent": [
+        "Telefon."
+       ],
+       "fromWord": 43
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "kin-words",
+   "start": "w45",
+   "transition": "fade",
+   "bg": "nebel",
+   "meta": "WEITERSAGEN",
+   "beats": [
+    {
+     "fromWord": 45,
+     "anim": "snap",
+     "stroke": "bar",
+     "lines": [
+      {
+       "text": "Schick das",
+       "size": 250
+      },
+      {
+       "text": "einem Café,",
+       "size": 250,
+       "fromWord": 47
+      }
+     ]
+    },
+    {
+     "fromWord": 49,
+     "anim": "mask",
+     "stroke": "under",
+     "lines": [
+      {
+       "text": "das über die",
+       "size": 230
+      },
+      {
+       "text": "Feiertage",
+       "size": 280,
+       "accent": [
+        "Feiertage"
+       ],
+       "fromWord": 52
+      },
+      {
+       "text": "anders öffnet.",
+       "size": 230,
+       "fromWord": 53
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "la-end",
+   "start": "w55",
+   "transition": "fade",
+   "signoff": "Content, der den Daumen stoppt.",
+   "fromWord": 55,
+   "outro": "Chispa!",
+   "outroWord": 60
+  }
+ ]
+}
