@@ -1,0 +1,33 @@
+{
+ "size": "1080x1350",
+ "slides": [
+  {
+   "bg": "nebel",
+   "html": "<h1 style=\"font-size:230px;margin-top:150px\">Die Caption<br>in <span class=\"f\">3 Sätzen.</span></h1>\n<p style=\"margin-top:50px;font-size:46px\">Für jeden Post. Ohne langes Überlegen.</p>\n<div class=\"bottom\"><p style=\"font-size:40px\"><b>Speicher dir das.</b> Wisch durch.</p></div>"
+  },
+  {
+   "bg": "nebel",
+   "html": "<div><span class=\"pill\">Satz 1</span></div>\n<h2 style=\"margin-top:60px;font-size:190px\">Was ist es?</h2>\n<p style=\"margin-top:50px;font-size:52px;max-width:920px\">Sag, was auf dem Bild ist. Ohne Einleitung, ohne „Hallo ihr Lieben“.</p>\n<div class=\"card\" style=\"margin-top:70px;font-size:54px;line-height:1.4;padding:56px 54px\"><span class=\"stamp\" style=\"font-size:22px\">BEISPIEL · BLUMENLADEN</span><p style=\"margin-top:22px\">„Ab heute da. Unsere Adventskränze.“</p></div>"
+  },
+  {
+   "bg": "petrol",
+   "html": "<div><span class=\"pill\">Satz 2</span></div>\n<h2 style=\"margin-top:60px;font-size:190px\">Warum jetzt?</h2>\n<p style=\"margin-top:50px;font-size:52px;max-width:920px\">Ein Detail, das man auf dem Foto nicht sieht. Frisch, neu, nur diese Woche, von Hand gemacht.</p>\n<div class=\"card\" style=\"margin-top:70px;font-size:54px;line-height:1.4;padding:56px 54px\"><span class=\"stamp\" style=\"font-size:22px\">BEISPIEL · BLUMENLADEN</span><p style=\"margin-top:22px\">„Jeder einzeln gebunden, mit frischer Tanne.“</p></div>"
+  },
+  {
+   "bg": "nebel",
+   "html": "<div><span class=\"pill\">Satz 3</span></div>\n<h2 style=\"margin-top:60px;font-size:190px\">Was jetzt tun?</h2>\n<p style=\"margin-top:50px;font-size:52px;max-width:920px\">Ein klarer nächster Schritt. Vorbeikommen, anrufen, schreiben, reservieren.</p>\n<div class=\"card\" style=\"margin-top:70px;font-size:54px;line-height:1.4;padding:56px 54px\"><span class=\"stamp\" style=\"font-size:22px\">BEISPIEL · BLUMENLADEN</span><p style=\"margin-top:22px\">„Heute bis 18 Uhr im Laden. Oder schreib uns, wir legen dir einen zurück.“</p></div>"
+  },
+  {
+   "bg": "tinte",
+   "html": "<h2 style=\"font-size:140px\">Zusammen.</h2>\n<div class=\"card\" style=\"margin-top:50px;font-size:44px;line-height:1.45\"><span class=\"stamp\" style=\"font-size:22px\">BEISPIEL · BLUMENLADEN</span><p style=\"margin-top:30px;font-size:50px\">Ab heute da. Unsere Adventskränze. 🌲<br><br>Jeder einzeln gebunden, mit frischer Tanne.<br><br>Heute bis 18 Uhr im Laden. Oder schreib uns, wir legen dir einen zurück.</p></div>\n<p style=\"margin-top:40px;font-size:38px\" class=\"muted\">Drei Sätze. Fertig.</p>"
+  },
+  {
+   "bg": "nebel",
+   "html": "<div><span class=\"pill\">Bonus</span></div>\n<h2 style=\"margin-top:34px;font-size:150px\">Hashtags? Ein paar <em>passende.</em></h2>\n<p style=\"margin-top:46px;font-size:48px;max-width:900px\">Keine Wand aus 30 Tags. Lieber wenige, die zu dir passen. Was du machst und wo du bist.</p>\n<p style=\"margin-top:40px;font-size:42px;font-family:JBM\">#blumenladen #adventskranz #deinestadt</p>"
+  },
+  {
+   "bg": "tinte",
+   "html": "<h1 style=\"font-size:200px;margin-top:180px\">Speicher<br>dir <span class=\"f\">das.</span></h1>\n<p style=\"margin-top:60px;font-size:42px\">Was ist es? Warum jetzt?<br>Was jetzt tun?</p>\n<div class=\"bottom\"><p style=\"font-size:34px\" class=\"muted\">Content, der den Daumen stoppt.</p></div>"
+  }
+ ]
+}

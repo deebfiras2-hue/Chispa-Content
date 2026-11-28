@@ -1,0 +1,37 @@
+{
+ "size": "1080x1350",
+ "slides": [
+  {
+   "bg": "petrol",
+   "html": "<div><span class=\"pill\">Beispiel</span></div>\n<h1 style=\"font-size:200px;margin-top:40px\">Ein Dezember für eine <em>Bäckerei.</em></h1>\n<p style=\"margin-top:50px;font-size:44px\">So sehen Posts aus einem Paket von uns aus. Die Bäckerei ist ausgedacht.</p>\n<div class=\"bottom\"><p style=\"font-size:40px\">Wisch durch.</p></div>"
+  },
+  {
+   "bg": "nebel",
+   "html": "<div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"font-weight:700;font-size:34px\">baeckerei.beispiel</span><span class=\"stamp\" style=\"color:var(--petrol)\">BEISPIEL</span></div>\n<div style=\"margin-top:28px;width:920px;height:840px;border-radius:24px;background:#0F5560;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden\"><div style=\"font-family:Karantina;font-weight:700;line-height:.9;font-size:120px;color:#EEF4EF\">Ab heute da.</div><div style=\"font-family:Karantina;font-weight:700;line-height:.9;font-size:250px;color:#FF8A3D;margin-top:10px\">Stollen.</div><div style=\"font-size:30px;color:#9DB8A4;margin-top:30px;letter-spacing:4px\">BÄCKEREI · BEISPIEL</div></div>\n<p style=\"margin-top:28px;font-size:36px;line-height:1.38\"><span class=\"muted\" style=\"font-size:28px\">Post 1 · Caption</span><br>Ab heute da. Unser Butterstollen, gebacken nach Omas Rezept. Ganz oder halb, an der Theke.</p>"
+  },
+  {
+   "bg": "nebel",
+   "html": "<div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"font-weight:700;font-size:34px\">baeckerei.beispiel</span><span class=\"stamp\" style=\"color:var(--petrol)\">BEISPIEL</span></div>\n<div style=\"margin-top:28px;width:920px;height:840px;border-radius:24px;background:#FFFFFF;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden\"><div style=\"font-family:Karantina;font-weight:700;line-height:.9;font-size:120px;color:#0B2125\">Feiertagszeiten.</div><div style=\"font-size:40px;color:#0B2125;margin-top:40px;line-height:1.7;font-family:JBM\">24.12.  7–12 Uhr<br>25./26.12.  zu<br>31.12.  7–13 Uhr<br>01.01.  zu</div></div>\n<p style=\"margin-top:28px;font-size:36px;line-height:1.38\"><span class=\"muted\" style=\"font-size:28px\">Post 2 · Caption</span><br>Damit du nicht vor verschlossener Tür stehst. Speicher dir die Zeiten oder schau oben im Profil.</p>"
+  },
+  {
+   "bg": "nebel",
+   "html": "<div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"font-weight:700;font-size:34px\">baeckerei.beispiel</span><span class=\"stamp\" style=\"color:var(--petrol)\">BEISPIEL</span></div>\n<div style=\"margin-top:28px;width:920px;height:840px;border-radius:24px;background:#EEF4EF;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden\"><div style=\"border:4px dashed #0F5560;border-radius:20px;padding:50px 70px\"><div style=\"font-family:Karantina;font-weight:700;line-height:.9;font-size:150px;color:#0F5560\">Gutschein.</div><div style=\"font-size:40px;color:#0B2125;margin-top:20px\">Für alle, die gutes Brot mögen.</div><div style=\"font-family:Karantina;font-weight:700;line-height:.9;font-size:110px;color:#FF8A3D;margin-top:20px\">ab 10 €</div></div></div>\n<p style=\"margin-top:28px;font-size:36px;line-height:1.38\"><span class=\"muted\" style=\"font-size:28px\">Post 3 · Caption</span><br>Noch ein Geschenk gesucht? Unsere Gutscheine gibt’s an der Theke, in jedem Betrag ab 10 €.</p>"
+  },
+  {
+   "bg": "nebel",
+   "html": "<div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"font-weight:700;font-size:34px\">baeckerei.beispiel</span><span class=\"stamp\" style=\"color:var(--petrol)\">BEISPIEL</span></div>\n<div style=\"margin-top:28px;width:920px;height:840px;border-radius:24px;background:#0B2125;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden\"><div style=\"font-family:Karantina;font-weight:700;line-height:.9;font-size:200px;color:#EEF4EF\">Danke.</div><div style=\"font-size:42px;color:#9DB8A4;margin-top:30px;max-width:700px\">Für jedes Brötchen, das ihr bei uns geholt habt.</div><div style=\"width:120px;height:8px;background:#FF8A3D;margin-top:40px\"></div></div>\n<p style=\"margin-top:28px;font-size:36px;line-height:1.38\"><span class=\"muted\" style=\"font-size:28px\">Post 4 · Caption</span><br>Danke für dieses Jahr. Ab dem 2. Januar sind wir wieder für euch da.</p>"
+  },
+  {
+   "bg": "nebel",
+   "html": "<h2 style=\"font-size:140px\">Jeder Post mit fertiger <em>Caption.</em></h2>\n<p style=\"margin-top:46px;font-size:46px;max-width:900px\">Bild und Text kommen zusammen. Du lädst hoch, wann du willst.</p>\n<ul class=\"l\" style=\"margin-top:50px;font-size:44px\"><li><b>20</b>Posts mit Caption</li><li><b>20</b>Stories</li><li><b>3</b>Reels mit Sprecherstimme</li></ul>\n<p style=\"margin-top:30px;font-size:30px\" class=\"muted\">Paket Chispa, 699 € einmal. Unsere Empfehlung.</p>"
+  },
+  {
+   "bg": "petrol",
+   "html": "<h2 style=\"font-size:150px\">So läuft das.</h2>\n<ul class=\"l\" style=\"margin-top:50px;font-size:46px\"><li><b>1</b>Du wählst dein Paket.</li><li><b>2</b>Du beantwortest ein paar Fragen.</li><li><b>3</b>Du bekommst alles fertig.</li></ul>\n<p style=\"margin-top:50px;font-size:40px\">Alles über WhatsApp. In wenigen Werktagen.<br><span class=\"muted\">Mit KI gemacht, von Menschen geprüft.</span></p>"
+  },
+  {
+   "bg": "nebel",
+   "html": "<h1 style=\"font-size:200px;margin-top:140px\">Schreib uns auf <span class=\"f\">WhatsApp.</span></h1>\n<p style=\"margin-top:60px;font-size:44px\">Link in der Bio. Ab 149 €.<br><b>Einmal zahlen. Kein Abo.</b></p>"
+  }
+ ]
+}
